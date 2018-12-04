@@ -1,19 +1,25 @@
-
+html {
+    background-color: #0d101e;
+}
 #header {
-
     text-align: center;
 }
 #header-left {
-    margin-top: 3em;
+    margin-top: 10em;
 }
 #header-right {
-    margin-top: 3em;
+    margin-top: 5em;
 }
-
+.row {
+    font-family: monospace;
+    /* margin-bottom: 15%; */
+}
 .content {
-    margin-top: 25em;
+    margin-top: 5em;
+    background-color: rgb(196, 204, 204);
 }
 .face {
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
+    margin-top: 2em;
 }
