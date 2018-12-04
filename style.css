@@ -4,23 +4,28 @@ html {
 #header {
     text-align: center;
 }
+#face {
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    margin-top: 2em;
+}
 #header-left {
     margin-top: 10em;
 }
 #header-right {
     margin-top: 5em;
 }
+
+.rounded {
+    border-radius: 25px;
+    /* background: #73AD21; */
+    padding: 20px; 
+}
 .row {
     font-family: monospace;
     /* margin-bottom: 15%; */
 }
 .content {
-    margin-top: 5em;
+    /* margin-top: 5em; */
     background-color: rgb(196, 204, 204);
 }
-.face {
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
-    margin-top: 2em;
-}
-/* navdeep doesn't know what he's doing */
