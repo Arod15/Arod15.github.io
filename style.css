@@ -32,7 +32,7 @@ html {
     padding-right: 5%;
     padding-top: 15%;
     width: 15%px;
-    float: right;
+    float: left;
 }
 
 .rounded {
@@ -48,4 +48,6 @@ html {
 .content {
     /* margin-top: 5em; */
     background-color: rgb(196, 204, 204);
+    width: 30%;
+    float: right;
 }
