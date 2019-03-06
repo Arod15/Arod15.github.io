@@ -1,9 +1,13 @@
 html {
     background-color: #0d101e;
 }
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
 .header {
     text-align: center;
-    height: 500px;
+    height: 400px;
     font-family: monospace;
 }
 .circle {
@@ -31,10 +35,28 @@ html {
     /* padding-top: 10em; */
     padding-right: 5%;
     padding-top: 15%;
-    width: 15%px;
+    width: 15%;
     float: left;
 }
-
+.icon-bar {
+    color: white;
+    text-align: center;
+    height: 100px;
+}
+.icon {
+    height: 100px;
+    width: 100px;
+}
+.git-circle {
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(40% at 50% 50%);
+    float: right;
+}
+.link-circle {
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(35% at 50% 50%);
+    float: left;
+}
 .rounded {
     border-radius: 25px;
     background: #73AD21;
@@ -47,7 +69,8 @@ html {
 } */
 .content {
     /* margin-top: 5em; */
+    margin: 10px;
     background-color: rgb(196, 204, 204);
-    width: 30%;
-    float: right;
+    /* width: 30%; */
+    /* float: right; */
 }
