@@ -8,7 +8,7 @@ img {
 .header {
     text-align: center;
     height: 400px;
-    font-family: monospace;
+    font-family: slabo;
 }
 .circle {
     -webkit-clip-path: circle(50% at 50% 50%);
@@ -71,6 +71,7 @@ img {
     /* margin-top: 5em; */
     margin: 10px;
     background-color: rgb(196, 204, 204);
+    font-family: 'Courier New', Courier, monospace;
     /* width: 30%; */
     /* float: right; */
 }
