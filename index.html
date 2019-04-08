@@ -10,79 +10,90 @@
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	 crossorigin="anonymous"> -->
 	<link rel="stylesheet" href="./style.css" type="text/css">
+	<!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" /> -->
 	<!-- <script src="js/scripts.js"></script> -->
 </head>
 
 <body>
-	<div class="header">
-			<div id="header-left" style="color: white">
-				<h3>Andrés José Rodríguez
-					<br> Email:
-					<a href="mailto:ar15@bu.edu" style="color: white">ar15@bu.edu</a>
-				</h3>
-			</div>
-			<div id="face">
-				<img src="./face.jpg" alt="My Personal Image" width="300px" height="300px" class="circle">
-			</div>
-			<div id="header-right" style="color: white">
-				<h3>Phone: (203) 308 - 8233
-					<br>
-					<a href="./resume.pdf" style="color: white">Résumé</a>
-				</h3>
-			</div>
-	</div>
-	<div class="icon-bar">
-		<div style="float: left; width: 50%;" class="icon">
-			<a href="www.google.com">
-				<img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Favatars3.githubusercontent.com%2Fu%2F9919%3Fv%3D3%26s%3D280&f=1" class="git-circle">
-			</a>
-		</div>
-		<div style="float: left; width: 50%;" class="icon">
-			<a href="www.google.com">
-				<img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2F1000logos.net%2Fwp-content%2Fuploads%2F2017%2F03%2FColor-of-the-LinkedIn-Logo.jpg&f=1" class="link-circle">
-			</a>
-		</div>
-	</div>
-	<div style="padding-left: 1%; padding-right: 1%; font-family: monospace">
-		<div class="content rounded"> 
-			<h1>Introduction</h1>
+	<div class="pages content">
+		<div id="intro">
 			<h2>Welcome to my page! My name is Andres Rodriguez, and I am a undergraduate Computer Science major at Boston University.
-				My hobbies include watching/playing basketball, listening to music, and playing video games. You are probably not here
+				My hobbies include watching/playing basketball, listening to music, and playing video games.
+				<br> <br> You are probably not here
 				to find out more about my personality; you want to see my projects and accomplishments, the
 				<i>good</i> stuff. Well, you can find most information about me here or on my Github. This page is just the beginning of
 				hopefully a long career of excitement! Enjoy!</h2>
 		</div>
-		<div class="content rounded">
-			<h1>Projects</h1>
-			<h2>HappyTweet</h2>
-			<h3>Happy Tweet is a project created to determine the emotional level of a text. It uses the
-				Twitter API to pull in tweets from nearby accounts and calculates the appropriate emotion
-				for the text using the Indico API.</h3>
-			<h2>Switch Scraper</h2>
-			<h3>Scrapes the newest submissions to /r/NintendoSwitchDeals and texts the most probable deals for a Nintendo Switch to your phone!</h3>
-			<h2>/r/NBA Reddit Opinion Bot</h2>
-			<h3>Program that scrapes Reddit comments for NBA player mentions and provides a data
-				visualization of positive to negative comments using Indico's sentiment API.</h3>
-			<h2>Quality of Life Spotify Functions</h2>
-			<h3>Project with multiple functions that complete obscure tasks when managing a Spotify account e.g. removing songs from playlists that are not in Library. 
-				Currently a work in progress.</h3>
-
+		<div id="face">
+			<img src="./face.jpg" class="circle">
 		</div>
-		<!-- <div class="content rounded">
-			<h1>Where to Find Me
-				<h1>
-					<a href="https://github.com/Arod15">
-						<img src="https://assets-cdn.github.com/images/modules/open_graph/github-logo.png" alt="Image of Github Logo" width="200"
-						 height="200" class="circle">
-					</a>
-					<a href="https://www.linkedin.com/in/andres-rodriguez-a3662a15b/">
-						<img src="https://cdn.woorkup.com/wp-content/uploads/2017/03/linkedin-cache.png" alt="Image of LinkedIn Logo"
-						 width="200px" height="200px" class="circle">
-					</a>
-				</h1>
-			</h1>
-		</div> -->
 	</div>
+	<div class="pages content">
+		<h1>Projects</h1>
+		<div class="box content">
+			<div style="height: 225px; padding-left: 10%;">
+				<div class="rounded bubble">
+					<h2>HappyTweet</h2>
+					<h3>Happy Tweet is a project created to determine the emotional level of a text. It uses the
+						Twitter API to pull in tweets from nearby accounts and calculates the appropriate emotion
+						for the text using the Indico API.</h3>
+				</div>
+			</div>
+			<div style="height: 200px; padding-right: 10%;">
+				<div class="rounded bubble" style="float:right">
+					<h2>Switch Scraper</h2>
+					<h3>Scrapes the newest submissions to /r/NintendoSwitchDeals and texts the most probable deals for a Nintendo Switch to your phone!</h3>
+				</div>
+			</div>
+			<div style="height: 225px; padding-left: 10%;">
+				<div class="rounded bubble">
+					<h2>/r/NBA Reddit Opinion Bot</h2>
+					<h3>Program that scrapes Reddit comments for NBA player mentions and provides a data
+							visualization of positive to negative comments using Indico's sentiment API.</h3>
+				</div>
+			</div>
+			<div style="height: 225px; padding-right: 10%;">
+				<div class="rounded bubble" style="float:right">
+					<h2>Quality of Life Spotify Functions</h2>
+					<h3>Project with multiple functions that complete obscure tasks when managing a Spotify account e.g. removing songs from playlists that are not in Library. 
+						Currently a work in progress.</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="pages content">
+		<h1>Links and Info</h1>
+		<div class="box content">
+			<div style="height: 225px; padding-left: 50%;">
+				<div class="rounded bubble">
+					<h2>HappyTweet</h2>
+					<h3>Happy Tweet is a project created to determine the emotional level of a text. It uses the
+						Twitter API to pull in tweets from nearby accounts and calculates the appropriate emotion
+						for the text using the Indico API.</h3>
+				</div>
+			</div>
+			<div style="height: 200px; padding-right: 50%;">
+				<div class="rounded bubble" style="float:right">
+					<h2>Switch Scraper</h2>
+					<h3>Scrapes the newest submissions to /r/NintendoSwitchDeals and texts the most probable deals for a Nintendo Switch to your phone!</h3>
+				</div>
+			</div>
+			<div style="height: 225px; padding-left: 50%;">
+				<div class="rounded bubble">
+					<h2>/r/NBA Reddit Opinion Bot</h2>
+					<h3>Program that scrapes Reddit comments for NBA player mentions and provides a data
+							visualization of positive to negative comments using Indico's sentiment API.</h3>
+				</div>
+			</div>
+			<div style="height: 225px; padding-right: 50%;">
+				<div class="rounded bubble" style="float:right">
+					<h2>Quality of Life Spotify Functions</h2>
+					<h3>Project with multiple functions that complete obscure tasks when managing a Spotify account e.g. removing songs from playlists that are not in Library. 
+						Currently a work in progress.</h3>
+				</div>
+			</div>
+		</div>
+	</div> -->
 </body>
 
 </html>
