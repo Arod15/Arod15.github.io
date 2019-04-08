@@ -1,3 +1,4 @@
+@import url('http://fonts.googleapis.com/css?family=Hind');
 html {
     background-color: #0d101e;
 }
@@ -5,73 +6,50 @@ img {
     max-width: 100%;
     max-height: 100%;
 }
-.header {
-    text-align: center;
-    height: 400px;
-    font-family: slabo;
-}
 .circle {
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     /* padding-top: 15%; */
 }
-
-#header-left {
-    /* margin-top: 10em; */
-    /* padding-top: 10em; */
+.pages {
+    width: auto;
+    /* height: 400px;   */
+    height: 700px;
+    border: white;
+    /* margin-top: 15%; */
+    padding-top: 15%;
     padding-left: 5%;
-    padding-top: 15%;
-    float: left;
-    width: 15%;
-}
-#face {
-    /* height: 600px; */
-    width: 60%;
-    float: left;
-    padding-top: 5%;
-}
-#header-right {
-    /* margin-top: 5em; */
-    /* padding-top: 10em; */
     padding-right: 5%;
-    padding-top: 15%;
-    width: 15%;
-    float: left;
 }
-.icon-bar {
+.content {
     color: white;
-    text-align: center;
-    height: 100px;
-}
-.icon {
-    height: 100px;
-    width: 100px;
-}
-.git-circle {
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(40% at 50% 50%);
-    float: right;
-}
-.link-circle {
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(35% at 50% 50%);
-    float: left;
+    font-family: Hind;
+    
 }
 .rounded {
     border-radius: 25px;
-    background: #73AD21;
-    padding: 20px; 
+    /* background: rgb(196, 204, 204); */
+    border: 1px solid white;
+    padding: 10px; 
 }
-/* .row {
-    font-family: monospace;
-    margin-bottom: 15%;
+#intro {
+    width: 50%;
     float: left;
-} */
-.content {
-    /* margin-top: 5em; */
-    margin: 10px;
-    background-color: rgb(196, 204, 204);
-    font-family: 'Courier New', Courier, monospace;
-    /* width: 30%; */
-    /* float: right; */
+    padding-top: 50px;
+}
+#face {
+    width: 400px;
+    height: 400px;
+    float: right;
+    padding-top: 50px;
+}
+.box {
+    height: 1000px;
+    /* float: left; */
+}
+.bubble {
+    width: 50%;
+}
+.debug {
+    border: 1px red dotted;
 }
