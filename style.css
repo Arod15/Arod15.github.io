@@ -50,6 +50,16 @@ img {
 .bubble {
     width: 50%;
 }
+#page2 {
+    padding-top: 0%;
+}
+#page3 {
+    padding-top: 25%;
+    text-align: center;
+}
+.link-box {
+    height: 300px;
+}
 .debug {
     border: 1px red dotted;
 }
