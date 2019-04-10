@@ -71,7 +71,7 @@ img.rounded {
 
 #banner {
     /* background-image: url(./website/vasco-whole.jpg); */
-    background-image: url("./website/vasco-beach.jpg");
+    background-image: url("./vasco-beach.png");
     background-size: 100%;
     height: 850px;
     border: 1px white;
