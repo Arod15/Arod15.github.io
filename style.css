@@ -1,5 +1,6 @@
 @import url('http://fonts.googleapis.com/css?family=Hind');
 @import url('http://fonts.googleapis.com/css?family=Karla');
+
 html {
     /* background-color: #0d101e; */
 }
@@ -51,7 +52,7 @@ img.rounded {
     padding-top: 20px;
 }
 .box {
-    height: 1000px;
+    height: 800px;
     /* float: left; */
 }
 #page2 {
@@ -97,7 +98,7 @@ img.rounded {
 .project {
     height: 20%;
     display: flex;
-    margin-bottom: 30px; 
+    margin-bottom: 20px; 
 }
 .project-icons {
     /* float: left; */
