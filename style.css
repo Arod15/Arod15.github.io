@@ -1,12 +1,35 @@
 @import url('http://fonts.googleapis.com/css?family=Hind');
 @import url('http://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
 html {
-    /* background-color: #0d101e; */
+    /*background-color: black;*/
+    background-color: rgba(150, 100, 255);
 }
 img {
-    max-width: 100%;
+    max-width: auto;
     max-height: 100%;
+    display: inline-block;
+}
+.nav {
+    margin: 0 auto;
+    padding-left: 0;
+    height: 100px;
+    width: 100%;
+}
+.nav li {
+    display: inline;
+    padding: 0 4%;
+    width:10%;
+    text-align: center;
+
 }
 .circle {
     -webkit-clip-path: circle(50% at 50% 50%);
@@ -16,7 +39,7 @@ img {
 .pages {
     width: auto;
     /* height: 400px;   */
-    height: 700px;
+    height: 750px;
     border: white;
     /* margin-top: 15%; */
     padding-top: 15%;
@@ -24,8 +47,8 @@ img {
     padding-right: 5%;
 }
 .content {
-    /* color: white; */
-    color: black;
+     color: white; 
+    /*color: black;*/
     /* font-family: Hind; */
     font-family: Karla;
     
@@ -53,7 +76,6 @@ img.rounded {
 }
 .box {
     height: 800px;
-    /* float: left; */
 }
 #page2 {
     padding-top: 0%;
@@ -69,27 +91,30 @@ img.rounded {
     border: 1px red dotted;
 }
 
-
 #banner {
     /* background-image: url(./website/vasco-whole.jpg); */
-    background-image: url("./vasco-beach.png");
+    /*background-image: url("./vasco-beach.png");*/
+    background-color: rgba(150, 100, 255);
     background-size: 100%;
-    height: 850px;
+    height: 770px;
     border: 1px white;
 }
 .link-button {
-    /* float: left; */
     width: 25%;
-    /* padding-top: 25%; */
-    margin-top: 25%;
     display: inline-block;
+    max-width:50px;
     text-align: center;
 }
-#banner-name {
+.banner-name {
     width: 45%;
     font-size: 50px;
     color: white;
-    font-family: Karla;
+    font-family: Roboto;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20%;
 }
 .icons {
     height: 60px;
