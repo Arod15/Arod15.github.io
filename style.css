@@ -3,6 +3,7 @@
 @import url('http://fonts.googleapis.com/css?family=Karla');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
 /*basic elements*/
 
@@ -69,10 +70,8 @@ img.rounded {
     padding: 0 4%;
     width:10%;
     text-align: center;
-    /*font-family: 'Cedarville Cursive', cursive, sans-serif;*/
 }
 #banner {
-    /* background-image: url(./website/vasco-whole.jpg); */
     background-image: url("./vasco-beach.png");
     /*background-color: rgba(150, 100, 255);*/
     background-size: 100%;
@@ -84,14 +83,13 @@ img.rounded {
     font-size: 50px;
     color: white;
     /*font-family: Roboto;*/
-    /*font-family: 'Cedarville Cursive', cursive, sans-serif;*/
     display: block;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     padding-top: 20%;
 }
-.banner-name, .nav li {
+.banner-name, .nav li, .titles, .project-icons h2 {
     font-family: 'Cedarville Cursive', cursive, sans-serif;
 }
 /*section 2: intro, profile picture*/
@@ -119,7 +117,7 @@ img.rounded {
     padding-top: 0;
 }
 .box {
-    height: 650px;
+    height: 700px;
 }
 .icons {
     height: 60px;
@@ -129,11 +127,15 @@ img.rounded {
     height: 25%;
     display: flex;
     margin-bottom: 20px; 
+    font-size: 20px;
 }
 .project-icons {
     height: 100%;
     display: inline-block;
     padding-left: 1%;
+}
+.project-icons p {
+    font-family: 'Nunito', sans-serif;
 }
 #spotify-logo {
     clip-path: circle(40% at 50% 50%);
