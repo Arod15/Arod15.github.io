@@ -32,7 +32,7 @@ img {
 
 }
 .circle {
-    -webkit-clip-path: circle(50% at 50% 50%);
+    /*-webkit-clip-path: circle(50% at 50% 50%);*/
     clip-path: circle(50% at 50% 50%);
     /* padding-top: 15%; */
 }
@@ -75,7 +75,7 @@ img.rounded {
     padding-top: 20px;
 }
 .box {
-    height: 800px;
+    height: 700px;
 }
 #projects {
     padding-top: 0;
@@ -93,8 +93,8 @@ img.rounded {
 
 #banner {
     /* background-image: url(./website/vasco-whole.jpg); */
-    /*background-image: url("./vasco-beach.png");*/
-    background-color: rgba(150, 100, 255);
+    background-image: url("./vasco-beach.png");
+    /*background-color: rgba(150, 100, 255);*/
     background-size: 100%;
     height: 770px;
     border: 1px white;
@@ -121,7 +121,7 @@ img.rounded {
     width: 60px;
 }
 .project {
-    height: 20%;
+    height: 25%;
     display: flex;
     margin-bottom: 20px; 
 }
@@ -129,4 +129,9 @@ img.rounded {
     /* float: left; */
     height: 100%;
     display: inline-block;
+    padding-left: 1%;
+}
+#spotify-logo {
+    /*-webkit-clip-path: circle(50% at 50% 50%);*/
+    clip-path: circle(40% at 50% 50%);
 }
