@@ -1,23 +1,63 @@
-@import url('http://fonts.googleapis.com/css?family=Hind');
+/*imports (fonts, etc.)*/
+
 @import url('http://fonts.googleapis.com/css?family=Karla');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap');
+
+/*basic elements*/
 
 * {
     box-sizing: border-box;
 }
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 html {
     /*background-color: black;*/
-    background-color: rgba(150, 100, 255);
+    /*background-color: rgba(150, 100, 255);*/
 }
 img {
     max-width: auto;
     max-height: 100%;
     display: inline-block;
 }
+/*layout styles*/
+.circle {
+    clip-path: circle(50% at 50% 50%);
+}
+.pages {
+    width: 100%;
+    height: 400px;   
+    height: 750px;
+    border: white;
+    /*margin-top: 15%; */
+    /*padding-top: 15%;*/
+    padding-left: 5%;
+    padding-right: 5%;
+    /*padding: 15% 5%;*/
+}
+.content {
+     color: black; 
+    /*color: black;*/
+    font-family: Karla;
+    
+}
+.rounded {
+    border-radius: 25px;
+    border: 1px solid black;
+    padding: 10px;  
+    padding-left: 10px;
+    padding-right: 10px;
+}
+img.rounded {
+    padding: 0px;
+}
+.debug {
+    border: 1px red dotted;
+}
+/*section 1: banner, nav*/
+
 .nav {
     margin: 0 auto;
     padding-left: 0;
@@ -29,92 +69,57 @@ img {
     padding: 0 4%;
     width:10%;
     text-align: center;
-
+    /*font-family: 'Cedarville Cursive', cursive, sans-serif;*/
 }
-.circle {
-    /*-webkit-clip-path: circle(50% at 50% 50%);*/
-    clip-path: circle(50% at 50% 50%);
-    /* padding-top: 15%; */
-}
-.pages {
-    width: auto;
-    /* height: 400px;   */
-    height: 750px;
-    border: white;
-    /* margin-top: 15%; */
-    padding-top: 15%;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-.content {
-     color: white; 
-    /*color: black;*/
-    /* font-family: Hind; */
-    font-family: Karla;
-    
-}
-.rounded {
-    border-radius: 25px;
-    border: 1px solid black;
-    /* padding: 10px;  */
-    padding-left: 10px;
-    padding-right: 10px;
-}
-img.rounded {
-    padding: 0px;
-}
-#intro {
-    width: 50%;
-    float: left;
-    padding-top: 50px;
-}
-#face {
-    width: 400px;
-    height: 400px;
-    float: right;
-    padding-top: 20px;
-}
-.box {
-    height: 700px;
-}
-#projects {
-    padding-top: 0;
-}
-#page3 {
-    padding-top: 25%;
-    text-align: center;
-}
-.link-box {
-    height: 300px;
-}
-.debug {
-    border: 1px red dotted;
-}
-
 #banner {
     /* background-image: url(./website/vasco-whole.jpg); */
     background-image: url("./vasco-beach.png");
     /*background-color: rgba(150, 100, 255);*/
     background-size: 100%;
-    height: 770px;
+    height: 650px;
     border: 1px white;
-}
-.link-button {
-    width: 25%;
-    display: inline-block;
-    max-width:50px;
-    text-align: center;
 }
 .banner-name {
     width: 45%;
     font-size: 50px;
     color: white;
-    font-family: Roboto;
+    /*font-family: Roboto;*/
+    /*font-family: 'Cedarville Cursive', cursive, sans-serif;*/
     display: block;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     padding-top: 20%;
+}
+.banner-name, .nav li {
+    font-family: 'Cedarville Cursive', cursive, sans-serif;
+}
+/*section 2: intro, profile picture*/
+
+#intro {
+    width: 50%;
+    float: left;
+    padding-top: 50px;
+    font-family: 'Cedarville Cursive', cursive, sans-serif;
+}
+#intro-section {
+    padding-top: 5%;
+    margin-bottom: 10%;
+}
+#face {
+    /*width: 400px;*/
+    width: 50%;
+    height: 100%;
+    float: right;
+    padding-top: 5%;
+}
+
+/*section 3: projects*/
+#projects {
+    padding-top: 0;
+}
+.box {
+    height: 650px;
 }
 .icons {
     height: 60px;
