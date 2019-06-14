@@ -89,7 +89,7 @@ img.rounded {
     margin-right: auto;
     padding-top: 20%;
 }
-.banner-name, .nav li, .titles, .project-icons h2 {
+.banner-name, .nav li, .titles {
     font-family: 'Cedarville Cursive', cursive, sans-serif;
 }
 /*section 2: intro, profile picture*/
@@ -97,7 +97,12 @@ img.rounded {
 #intro {
     width: 50%;
     float: left;
-    padding-top: 50px;
+    /*padding-top: 50px;*/
+    margin-top: 50px;
+    padding-left: 2%;
+    padding-right: 2%;
+    border: 1px solid grey;
+    border-radius: 50px;
     font-family: 'Cedarville Cursive', cursive, sans-serif;
 }
 #intro-section {
@@ -114,7 +119,7 @@ img.rounded {
 
 /*section 3: projects*/
 #projects {
-    padding-top: 0;
+    padding-top: 3%;
 }
 .box {
     height: 700px;
@@ -124,10 +129,11 @@ img.rounded {
     width: 60px;
 }
 .project {
-    height: 25%;
+    height: 30%;
     display: flex;
-    margin-bottom: 20px; 
-    font-size: 20px;
+    /*margin-bottom: 20px;*/ 
+    margin: 3% 5% 5% 3%;
+    font-size: 14px;
 }
 .project-icons {
     height: 100%;
