@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 /*basic elements*/
 
@@ -36,7 +37,8 @@ img {
     padding-right: 5%;
 }
 .content {
-    font-family: Karla;
+    /*font-family: Karla;*/
+    font-family: 'Lato', sans-serif;
     color: white;
     text-shadow: 1px 1px black;
 }
@@ -135,12 +137,8 @@ img.rounded {
 .left-project, .right-project {
     height: 100%;
     width: 45%;
-    font-family: Karla;
     display: inline-block;
-/*    border: 1px solid black;
-    border-radius: 25px;*/
     background-color: #3895B2;
-    /*float: left;*/
 }
 .left-project {
     float: left;
@@ -156,9 +154,9 @@ img.rounded {
     padding-top: 3%;
 }
 .project-text {
-    font-family: 'Nunito', sans-serif;
+    /*font-family: 'Nunito', sans-serif;*/
+    font-family: 'Lato', sans-serif;
     color: white;
-
     font-size: 14px;
     width: 65%;
     height: 100%;
