@@ -5,145 +5,155 @@
 @import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
-/*basic elements*/
-
-* {
-    box-sizing: border-box;
-}
-a {
-    text-decoration: none;
-    color: black;
-}
-html {
-    /*background-color: black;*/
-    /*background-color: rgba(150, 100, 255);*/
+/*html elements*/
+body {
+    height: 1000px;
+    margin: 0 0;
 }
 img {
-    max-width: auto;
+    max-width: 100%;
     max-height: 100%;
-    display: inline-block;
+
 }
-/*layout styles*/
+/*general classes*/
 .circle {
     clip-path: circle(50% at 50% 50%);
 }
-.pages {
-    width: 100%;
-    height: 400px;   
-    height: 750px;
-    border: white;
-    /*margin-top: 15%; */
-    /*padding-top: 15%;*/
-    padding-left: 5%;
-    padding-right: 5%;
-    /*padding: 15% 5%;*/
-}
-.content {
-     color: black; 
-    /*color: black;*/
-    font-family: Karla;
-    
-}
 .rounded {
-    border-radius: 25px;
-    border: 1px solid black;
-    padding: 10px;  
-    padding-left: 10px;
-    padding-right: 10px;
+    border-radius: 50px;
 }
-img.rounded {
-    padding: 0px;
-}
-.debug {
-    border: 1px red dotted;
-}
-/*section 1: banner, nav*/
-
-.nav {
-    margin: 0 auto;
-    padding-left: 0;
-    height: 100px;
+/*nav bar*/
+.nav-bar {
     width: 100%;
+    /*height: 200px;*/
+    height: 20vh;
+    /*background-color: grey;*/
+    border: 1px solid black;
+    position: fixed;
+    z-index: 100;
+}
+.photo {
+    height: 100%;
+    width: 200px;
+    /*border: 1px solid red;*/
+    background-color: grey;
+    float: left;
+}
+.photo img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 10%;
+}
+.nav {
+    width: 85%;
+    height: 50%;
+    border: 1px solid blue;
+    margin-top: 2%;
+    float: right;
 }
 .nav li {
-    display: inline;
-    padding: 0 4%;
-    width:10%;
-    text-align: center;
-}
-#banner {
-    background-image: url("./vasco-beach.png");
-    /*background-color: rgba(150, 100, 255);*/
-    background-size: 100%;
-    height: 650px;
-    border: 1px white;
-}
-.banner-name {
-    width: 45%;
-    font-size: 50px;
-    color: white;
-    /*font-family: Roboto;*/
-    display: block;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20%;
-}
-.banner-name, .nav li, .titles {
-    font-family: 'Cedarville Cursive', cursive, sans-serif;
-}
-/*section 2: intro, profile picture*/
-
-#intro {
-    width: 50%;
-    float: left;
-    /*padding-top: 50px;*/
-    margin-top: 50px;
-    padding-left: 2%;
-    padding-right: 2%;
-    border: 1px solid grey;
-    border-radius: 50px;
-    font-family: 'Cedarville Cursive', cursive, sans-serif;
-}
-#intro-section {
-    padding-top: 5%;
-    margin-bottom: 10%;
-}
-#face {
-    /*width: 400px;*/
-    width: 50%;
     height: 100%;
-    float: right;
-    padding-top: 5%;
+    width: 30%;
+    font-size: 24px;
+    display: inline;
+    margin: 0 10%;
+    border: 1px solid green;
 }
 
-/*section 3: projects*/
-#projects {
-    padding-top: 3%;
+/*sidebar*/
+.sidebar {
+    /*height: 650px;*/
+    margin-top: 20vh;
+    height: 80vh;
+    /*width: 10%;*/
+    width: 200px;
+    background-color: grey;
+    border: 1px solid black;
+    display: inline-block;
+    /*float: left;*/
+    position: fixed;
 }
-.box {
-    margin-top: 5%;
+
+/*content: projects, about me, photos, etc*/
+.content {
+    height: 3000px;
+    /*height: 80vh;*/
+    width: 85%;
+    border: 1px solid red;
+    margin-top: 20vh;
+    display: inline-block;
+    float: right;
+}
+#about-me {
+    width: 100%;
+    height: 80vh;
+    /*border: 1px solid black;*/
+    margin: 0 auto;
+}
+
+
+#project-section {
+    padding-top: 3%;
+    height: 100vh;
+    margin: 0 auto;
+    width: 100%;
+    border: 1px solid green;
+}
+.project-container {
+    /*margin-top: 5%;*/
     height: 700px;
+    /*margin: 0 auto;*/
+    float: left;
 }
 .icons {
     height: 60px;
     width: 60px;
 }
-.project {
+.project-row {
     height: 30%;
     width: 100%;
-    display: flex;
-    /*margin-bottom: 20px;*/ 
-    margin: 0% 5% 5% 3%;
-    font-size: 14px;
+    margin: 0% 0% 5% 0%;
+    /*border: 3px solid black;*/
+}
+.left-project, .right-project {
+    height: 100%;
+    width: 45%;
+    font-family: Karla;
+    display: inline-block;
+/*    border: 1px solid black;
+    border-radius: 25px;*/
+    background-color: #3895B2;
+    /*float: left;*/
+}
+.left-project {
+    float: left;
+}
+.right-project {
+    float: right;
 }
 .project-icons {
     height: 100%;
+    width: 30%;
     display: inline-block;
-    padding-left: 1%;
+    float: left;
+    padding-top: 3%;
 }
-.project-icons p {
+.project-text {
     font-family: 'Nunito', sans-serif;
+    color: white;
+    font-size: 14px;
+    width: 65%;
+    height: 100%;
+    /*padding-left: 2%;
+    padding-top: 2%;*/
+    display: inline-block;
+    float: left;
+}
+.project-text h2 {
+    margin-top: 0;
+}
+.project-text p {
+    margin-bottom: 0;
 }
 #spotify-logo {
     clip-path: circle(40% at 50% 50%);
