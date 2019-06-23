@@ -35,6 +35,7 @@ a {
     height: 100px;
     /*background-color: grey;*/
     border: 1px solid black;
+    background-color: grey;
     position: fixed;
     z-index: 100;
 }
@@ -42,7 +43,6 @@ a {
     height: 100%;
     width: 200px;
     /*border: 1px solid red;*/
-    background-color: grey;
     float: left;
 }
 .photo img {
@@ -54,23 +54,23 @@ a {
     width: 85%;
     height: 100%;
     /*border: 1px solid blue;*/
-    background-color: grey;
     float: left;
 }
 .nav li {
     height: 100%;
     width: 30%;
     font-size: 24px;
-    display: inline;
-    margin: 0 13%;
+    display: inline-block;;
+    margin: 0 0;
+    text-align: center;
     /*border: 1px solid green;*/
 }
 
 /*sidebar*/
 .sidebar {
     /*height: 650px;*/
-    margin-top: 20vh;
-    height: 80vh;
+    margin-top: 10vh;
+    height: 90vh;
     /*width: 10%;*/
     width: 200px;
     background-color: grey;
@@ -85,23 +85,24 @@ a {
     height: 3000px;
     /*height: 80vh;*/
     width: 85%;
-    border: 1px solid red;
-    display: inline-block;
+    /* border: 1px solid red; */
+    /* display: inline-block; */
+    margin-right: 1%;
     float: right;
 }
 #about-me {
     width: 100%;
     height: 80vh;
-    /*border: 1px solid black;*/
-    margin: 20vh auto 0 auto;
+    border: 1px solid red;
+    margin: 10vh auto 0 auto;
     float: left;
 }
 
 
 #project-section {
     height: 100vh;
-    margin: 3% auto 0 auto;
     width: 100%;
+    margin: 3% auto 0 auto;
     border: 1px solid green;
 }
 .project-container {
