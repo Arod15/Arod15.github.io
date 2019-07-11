@@ -36,7 +36,7 @@ a {
     height: 100vh;
     width: 20vw;
     /* width: 200px; */
-     /*background-color: teal; */
+     /*background-color: #E9DFDF; */
     /* border: 1px solid black; */
     display: inline-block;
     float: left;
@@ -44,6 +44,23 @@ a {
 }
 .sidebar h2 {
     text-align: center;
+}
+.sidebar li {
+    list-style: none;
+}
+.well, .ok, .shrug {
+    -webkit-text-stroke-width: 1px;
+   /*-webkit-text-stroke-color: black;*/
+}
+.well {
+    /*color: #00FF6F;*/
+    color: #21C066;
+}
+.ok {
+    color: #D7D126;
+}
+.shrug {
+    color: #DC3232;
 }
 .photo {
     height: 25%;
@@ -107,7 +124,7 @@ a {
 .project-row {
     height: 20%;
     width: 100%;
-    margin: 0 0 2% 0;
+    margin: 0 0 4% 0;
     /* border: 1px solid black; */
 }
 
@@ -150,7 +167,7 @@ a {
 }
 .project-text p {
     margin-bottom: 0;
-    font-size: 16px;
+    font-size: 17px;
 }
 #spotify-logo {
     clip-path: circle(42.5% at 52.5% 50%);
