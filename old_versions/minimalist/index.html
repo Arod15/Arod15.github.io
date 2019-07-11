@@ -14,46 +14,75 @@
 </head>
 
 <body>
-	<div style="height: 10vh;">
-		<ul class='nav'>
-			<li class="banner-name">
-				<a href="#intro-start">bio</a>
-			</li>
-			<li class="banner-name">
-				<a href="#project-section">projects</a>
-			</li>
-			<li class="banner-name">
-				<a href="https://www.linkedin.com/in/andres-rodriguez-a3662a15b/">linkedin</a>
-			</li>
-			<li class="banner-name">
-				<a href="./resume.pdf">resume</a>
-			</li>
-			<li class="banner-name">
-				<a href="https://www.github.com/Arod15">github</a>
-			</li>
-			<li class="banner-name">
-				<a href="./games.html">games</a>
-			</li>
-		</ul>
+	<div class="sidebar">
+		<div class="photo">
+			<img class="circle" src="./face.jpg"/>
+		</div>
+		<div style="margin-top: 10%;">
+			<h1 style="text-align: center;">Andres Rodriguez</h1>
+			<h2>Languages</h2>
+			<ul>
+				<li>Python</li>
+				<li>Java</li>
+				<li>SQL</li>
+				<li>Javascript</li>
+				<li>C</li>
+			</ul>
+			<h2>Technologies</h2>
+			<ul>
+				<li>Flask</li>
+				<li>MongoDB</li>
+				<li>Secure Shell (SSH)</li>
+			</ul>
+			<h2>Currently Learning</h2>
+			<ul>
+				<li>React</li>
+				<li>C#</li>
+				<li>Android Development</li>
+			</ul>
+			<h2>Contact</h2>
+			<ul>
+				<li>linkedin</li>
+				<li>github</li>
+				<li>facebook lol</li>
+			</ul>
+		</div>
 	</div>
-	<div id="banner">
-		<!-- <div class="banner-name">andrés josé rodríguez</div> -->
-	</div>
-	<div id="intro-start"></div>
-	<div id="intro-section" class="pages">
-		<div id="intro">
+	<div style="height: 90vh; border: 1px solid black; margin: 3vh 0 0% 21.5vw; position: fixed;"></div>
+	<div class="content">
+		<!-- <div style="margin-bottom: 1%;"></div> -->
+		<div style="height: 10vh;">
+			<ul class='nav'>
+				<li class="banner-name">
+					<a href="#intro-start">bio</a>
+				</li>
+				<li class="banner-name">
+					<a href="#project-section">projects</a>
+				</li>
+				<li class="banner-name">
+					<a href="https://www.linkedin.com/in/andres-rodriguez-a3662a15b/">linkedin</a>
+				</li>
+				<li class="banner-name">
+					<a href="./resume.pdf">resume</a>
+				</li>
+				<li class="banner-name">
+					<a href="https://www.github.com/Arod15">github</a>
+				</li>
+				<li class="banner-name">
+					<a href="./games.html">games</a>
+				</li>
+			</ul>
+		</div>
+		<div id="about-me">
+			<h1>About Me</h1>
 			<h2 style="text-indent: 40px;">Welcome to my page! My name is Andres Rodriguez, and I am a undergraduate Computer Science major at Boston University. My hobbies include watching/playing basketball, listening to music, and playing video games.</h2>
-			<h2 style="text-indent: 40px;">You are probably not here to find out more about my personality; you want to see my projects and accomplishments, the <i>good</i> stuff. Well, you can find most information about me here or on my Github. This page is just the beginning of hopefully a long career of excitement! Enjoy!</h2>
+			<h2 style="text-indent: 40px;">When I was but a wee child, I didn't really know what I wanted to do as a career. I had many ideas bouncing around in my head, but my main focus was on a career that would help my family. I first wanted to become a police officer because I wanted to stop bad guys from hurting my family. Later, I wanted to become a lawyer in order to fight for my family's innocence in bad times. However, no career seemed to peek my interest as an individual, as a person who's going to work for the rest of his life. One introduction to HTML, CSS, and JS course in my senior year of high school changed my life forever as I found out I loved problem solving with computers! Almost four years later, I am further on that path of computer science, entering my senior year of college, ambitious to join the work force as an entry-level software developer.  </h2>
+			<h2 style="text-indent: 40px;">Enough with the personal stuff! You are most likely here to see my projects and accomplishments, to see of what I am capable. Well, you can find most information about me here or on my Github. Enjoy!</h2>
 		</div>
-		<div id="face">
-			<img src="./face.jpg" class="circle" style="max-width: 70%; max-height: 70%; margin: 5% 0 0 20%;">
-		</div>
-	</div>
-	<div class="pages" id="project-section">
-		<h1 class="titles">Projects</h1>
-		<div class="project-container content">
-			<div class="project-row">
-				<div class="left-project rounded">
+		<div id="project-section">
+			<h1 class="titles">Projects</h1>
+			<div class="project-container">
+				<div class="project-row">
 					<div class="project-icons">
 						<a href="https://github.com/Arod15/HappyTweet">
 							<img src="https://raw.githubusercontent.com/Arod15/HappyTweet/master/happy_tweet_web/src/JRBB_logo.png" />
@@ -61,30 +90,28 @@
 					</div>
 					<div class="project-text">
 						<h2>HappyTweet</h2>
+						<p class="date">Date: March 2017</p>
 						<p>Happy Tweet is a project created to determine the emotional level of a text. It uses the
 							Twitter API to pull in tweets from nearby accounts and calculates the appropriate emotion
 							for the text using the Indico API.</p>
-						<!-- <p>Date: March 2017</p> -->
 						<p>Technologies: ReactJS, Flask, Python, Indico API (Emotion Detection), Twitter API (tweepy), Material UI from Google, MongoDB, HTML, CSS, JavaScript</p>
 					</div>
 				</div>
-				<div class="right-project rounded">
+				<div class="project-row">
 					<div class="project-icons">
 						<a href="https://github.com/Arod15/nba-reddit-bot">
-							<img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Ftheonyxpath.com%2Fwp-content%2Fuploads%2F2014%2F12%2Fsnoo.png&f=1" />
+							<img id="snoo" src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Ftheonyxpath.com%2Fwp-content%2Fuploads%2F2014%2F12%2Fsnoo.png&f=1" />
 						</a>
 					</div>
 					<div class="project-text">
 						<h2>/r/NBA Reddit Opinion Bot</h2>
+						<p class="date">Date: September 2018</p>
 						<p>Program that scrapes Reddit comments for NBA player mentions and provides a data 
 							visualization of positive to negative comments using Indico's sentiment API.</p>
-						<p>Date: September 2018</p>
 						<p>Technologies: Python, MongoDB</p>
 					</div>
 				</div>
-			</div>
-			<div class="project-row">
-				<div class="left-project rounded">
+				<div class="project-row">
 					<div class="project-icons">
 						<a href="https://github.com/Arod15/Switch-Scraper">
 							<img src="https://raw.githubusercontent.com/Arod15/Switch-Scraper/master/static/imgs/favicon.png" />
@@ -92,12 +119,12 @@
 					</div>
 					<div class="project-text">
 						<h2>Switch Scraper</h2>
+						<p class="date">Date: January 2019</p>
 						<p>Scrapes the newest submissions to /r/NintendoSwitchDeals and texts the most probable deals for a Nintendo Switch to your phone!</p>
-						<p>Date: January 2019</p>
 						<p>Technologies: Python, Flask, MongoDB, HTML/CSS</p>
 					</div>
 				</div>
-				<div class="right-project rounded">
+				<div class="project-row">
 					<div class="project-icons">
 						<a href="https://github.com/Arod15/QoL-Spotify-Functions">
 							<img id="spotify-logo" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.UaK2FXkamHpGrxi-7RrIggHaHa%26pid%3DApi&f=1" />
@@ -105,19 +132,18 @@
 					</div>
 					<div class="project-text">
 						<h2>Quality of Life Spotify Functions</h2>
+						<p class="date">Date: September 2018</p>
 						<p>Project with multiple functions that complete obscure tasks when managing a Spotify account e.g. removing songs from playlists that are not in Library. 
 							Currently a work in progress.</p>
-						<p>Date: September 2018</p>
 						<p>Technologies: React, Python, etc.</p>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<hr>
-	<div id="photo-section">
-		<h1>Photos</h1>
-		<p>This section is for random photos that I would like to display. It is under construction.</p>
+		<div>
+			<h1>Photos</h1>
+			<p>There's nothing...</p>
+		</div>
 	</div>
 </body>
 
