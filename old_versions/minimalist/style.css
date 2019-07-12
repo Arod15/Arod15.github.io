@@ -10,6 +10,7 @@ body {
     height: 1000px;
     margin: 0;
     font-family: Roboto;
+    background-color: #04B922;
     /* background-color: red; */
 }
 img {
@@ -33,11 +34,12 @@ a {
 .sidebar {
     /*height: 650px;*/
     margin-left: 1%;
-    height: 100vh;
+    height: 97vh;
     width: 20vw;
     /* width: 200px; */
-     /*background-color: #E9DFDF; */
+     background-color: white;
     /* border: 1px solid black; */
+    border-radius: 25px;
     display: inline-block;
     float: left;
     position: fixed;
@@ -76,6 +78,7 @@ a {
 /*content: projects, about me, photos, etc*/
 .content {
     height: 3000px;
+    color: white;
     /*height: 80vh;*/
     width: 74vw;
     /* border: 1px solid red; */
