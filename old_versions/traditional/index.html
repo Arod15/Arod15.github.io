@@ -15,72 +15,68 @@
 
 <body>
 	<div class="banner">
-		<div class="nav"></div>
-	</div>
-	<!-- <div class="sidebar bubble">
-		<div class="photo">
-			<img class="circle" src="../../face.jpg"/>
-		</div>
-		<div style="margin-top: 10%;">
-			<h2 style="text-align: center;">Andrés Rodríguez</h2>
-			<h2>Contact</h2>
-			<ul>
-				<li>linkedin</li>
-				<li>github</li>
-				<li>facebook lol</li>
-			</ul>
-			<h2>Hierachy of Knowledge</h2>
-			<ul>
-				<li class="well">Python</li>
-				<li class="well">HTML, CSS, Javascript</li>
-				<li class="well">SQL</li>
-				<li class="ok">Secure Shell (SSH)</li>
-				<li class="ok">Java</li>
-				<li class="ok">MongoDB</li>
-				<li class="ok">C</li>
-				<li class="ok">Flask</li>
-				<li class="shrug">React</li>
-				<li class="shrug">C#</li>
-				<li class="shrug">Node</li>
-				<li class="shrug">Android Development</li>
-			</ul>
-		</div>
-	</div>
-	<div style="height: 95vh; border: 1px solid black; margin: 1vh 0 0% 21.5vw; position: fixed;"></div>
-	<div class="content">
-		<!-- <div style="margin-bottom: 1%;"></div> -->
-		<div style="height: 10vh;">
-			<ul class='nav'>
-				<li class="banner-name bubble">
-					<a href="#project-section">Projects</a>
-				</li>
-				<!-- <li class="banner-name bubble">
-					<a href="https://www.linkedin.com/in/andres-rodriguez-a3662a15b/">linkedin</a>
-				</li>
-				<li class="banner-name bubble">
-					<a href="../../resume.pdf">resume</a>
-				</li>
-				<li class="banner-name bubble">
-					<a href="https://www.github.com/Arod15">github</a>
-				</li> -->
-				<!-- <li></li> -->
-				<li class="banner-name bubble">
-					<a href="../../games.html">Games</a>
-				</li>
-				<!-- <li class="banner-name bubble">
-					<a href="#intro-start">bio</a>
-				</li> -->
-			</ul>
-		</div>
-		<div class="about-me-container">
-			<div id="about-me" class="bubble">
-				<h1>About Me</h1>
-				<h2 style="text-indent: 40px;">Welcome to my page! My name is Andres Rodriguez, and I am a undergraduate Computer Science major at Boston University. My hobbies include watching/playing basketball, listening to music, and playing video games.</h2>
-				<h2 style="text-indent: 40px;">When I was but a wee child, I didn't really know what I wanted to do as a career. I had many ideas bouncing around in my head, but my main focus was on a career that would help my family. I first wanted to become a police officer because I wanted to stop bad guys from hurting my family. Later, I wanted to become a lawyer in order to fight for my family's innocence in bad times. However, no career seemed to peek my interest as an individual, as a person who's going to work for the rest of his life. One introduction to HTML, CSS, and JS course in my senior year of high school changed my life forever as I found out I loved problem solving with computers! Almost four years later, I am further on that path of computer science, entering my senior year of college, ambitious to join the work force as an entry-level software developer.  </h2>
-				<h2 style="text-indent: 40px;">Enough with the personal stuff! You are most likely here to see my projects and accomplishments, to see of what I am capable. Well, you can find most information about me here or on my Github. Enjoy!</h2>
+		<div class="nav-bar">
+			<div class="signature">Andrés José Rodríguez</div>
+			<div class="nav">
+				<ul>
+					<li>
+						<a href="#sidebar" style="color: white; text-decoration: none;">Projects</a>
+					</li>
+					<li>Photos</li>
+					<li>Games</li>
+				</ul>
 			</div>
 		</div>
-		<div id="project-section bubble">
+		<div class="welcome-contact-container">
+			<div class="welcome">Welcome, friend!</div>
+			<div class="links">
+				<ul>
+					<li>
+						<a href="https://www.linkedin.com/in/andres-rodriguez-a3662a15b/">
+							<img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.iconsdb.com%2Ficons%2Fpreview%2Fwhite%2Flinkedin-5-xxl.png&f=1" alt="linkedin"/>
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/Arod15">
+							<img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.iconsdb.com%2Ficons%2Fpreview%2Fwhite%2Fgithub-11-xxl.png&f=1" alt="github">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="sidebar-projects-container">
+		<div id="sidebar">
+			<div class="photo">
+				<img class="circle" src="../../face.jpg"/>
+			</div>
+			<div style="margin-top: 10%;">
+				<h2 style="text-align: center;">Andrés Rodríguez</h2>
+				<h2>Contact</h2>
+				<ul>
+					<li>linkedin</li>
+					<li>github</li>
+					<li>facebook lol</li>
+				</ul>
+				<h2>Hierachy of Knowledge</h2>
+				<ul>
+					<li class="well">Python</li>
+					<li class="well">HTML, CSS, Javascript</li>
+					<li class="well">SQL</li>
+					<li class="ok">Secure Shell (SSH)</li>
+					<li class="ok">Java</li>
+					<li class="ok">MongoDB</li>
+					<li class="ok">C</li>
+					<li class="ok">Flask</li>
+					<li class="shrug">React</li>
+					<li class="shrug">C#</li>
+					<li class="shrug">Node</li>
+					<li class="shrug">Android Development</li>
+				</ul>
+			</div>
+		</div>
+		<!-- <div style="height: 100%; width: 1px; border: 1px solid black;"></div> -->
+		<div id="project-section">
 			<h1 class="titles">Projects</h1>
 			<div class="project-container">
 				<div class="project-row">
@@ -141,11 +137,19 @@
 				</div>
 			</div>
 		</div>
-		<div>
-			<h1>Photos</h1>
-			<p>There's nothing...</p>
+	</div>
+	<!-- <div class="about-me-container">
+		<div id="about-me" class="bubble">
+			<h1>About Me</h1>
+			<h2 style="text-indent: 40px;">Welcome to my page! My name is Andres Rodriguez, and I am a undergraduate Computer Science major at Boston University. My hobbies include watching/playing basketball, listening to music, and playing video games.</h2>
+			<h2 style="text-indent: 40px;">When I was but a wee child, I didn't really know what I wanted to do as a career. I had many ideas bouncing around in my head, but my main focus was on a career that would help my family. I first wanted to become a police officer because I wanted to stop bad guys from hurting my family. Later, I wanted to become a lawyer in order to fight for my family's innocence in bad times. However, no career seemed to peek my interest as an individual, as a person who's going to work for the rest of his life. One introduction to HTML, CSS, and JS course in my senior year of high school changed my life forever as I found out I loved problem solving with computers! Almost four years later, I am further on that path of computer science, entering my senior year of college, ambitious to join the work force as an entry-level software developer.  </h2>
+			<h2 style="text-indent: 40px;">Enough with the personal stuff! You are most likely here to see my projects and accomplishments, to see of what I am capable. Well, you can find most information about me here or on my Github. Enjoy!</h2>
 		</div>
-	</di -->v>
+	</div>
+	<div>
+		<h1>Photos</h1>
+		<p>There's nothing...</p>
+	</div> -->
 </body>
 
 </html>

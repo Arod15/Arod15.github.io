@@ -6,6 +6,9 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
 /*html elements*/
+html {
+    scroll-behavior: smooth;
+}
 body {
     height: 1000px;
     margin: 0;
@@ -16,13 +19,16 @@ body {
 img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: none;
+    /* object-fit: none; */
 }
 a {
     text-decoration: none;
     color: black;
 }
-
+ul {
+    margin: 0 auto;
+    padding-left: 0;
+}
 /*general classes*/
 .circle {
     clip-path: circle(50% at 50% 50%);
@@ -32,44 +38,99 @@ a {
     /*background-color: #0F94C4;*/
 }
 
-/*nav bar*/
-.nav {
+/*nav-bar, banner, title*/
+.nav-bar {
     height: 10vh;
-    width: 100%;
-    top: 10px;
-    /*background-color: blue;*/
-    border: 1px solid white;
+    width: 95%;
+    /* border: 1px solid red; */
+    margin-top: 1%;
+    left: 2.5%;
     position: absolute;
+}
+.signature {
+    height: 90%;
+    width: 30%;
+    font-size: 40px;
+    font-family: 'Cedarville Cursive', cursive;
+    text-align: center;
+    color: white;
+    /* border: 1px solid white; */
+    display: inline-block;
+    padding-top: 0.5%;
+}
+.nav {
+    height: 100%;
+    width: 68%;
+    border: 1px solid white;
+    display: inline-block;
+    /* margin-right: 2%; */
+    float: right;
+}
+.nav li {
+    font-size: 35px;
+    color: white;
+    display: inline-block;
+    padding: 2% 10% 0 10%;
 }
 .banner {
     height: 100vh;
     width: 100%;
     /*background-color: purple;*/
-    background-image: url('http://getwallpapers.com/wallpaper/full/5/1/c/1178449-download-ios-8-stock-wallpapers-1920x1080.jpg');
+    /* background-image: url('http://getwallpapers.com/wallpaper/full/5/1/c/1178449-download-ios-8-stock-wallpapers-1920x1080.jpg'); */
+    /* background-image: url('./low-poly-texture-18.png'); */
+    background-image: url('https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Ff.vividscreen.info%2Fsoft%2F16ea3ca51ac3031391e6c7743ca58235%2FOnePlus-One-1920x1200.jpg&f=1');
     background-size: 100% 100%;
     position: relative;
 }
+.welcome-contact-container {
+    height: 15%;
+    width: 40%;
+    font-size: 60px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    text-align: center;
+    color: white;
+    /* border: 1px solid white; */
+    /* margin: 25% 0 0 25%; */
+    top: 40%;
+    left: 30%;
+    /* right: 25%; */
+    position: absolute;
+}
+.links ul {
+    height: 40%;
+}
+.links li {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    position: relative;
+}
+.links li:active {
+    height: 35px;
+    width: 35px;
+}
 
-/*sidebar*/
-.sidebar {
-    /*height: 650px;*/
-    margin-left: 1%;
-    height: 97vh;
+/*sidebar, projects*/
+.sidebar-projects-container {
+    height: 100vh;
+    width: 100%;
+}
+#sidebar {
+    height: 100vh;
     width: 20vw;
-    /* width: 200px; */
-    /*background-color: #0F94C4;*/
+    /* background-color: #0F94C4; */
+    background-color: #DC0176;
     /*background-color: #ABDFF2;*/
-    border: 1px solid black; 
-    color: black;
-    border-radius: 25px;
+    /* border: 1px solid black;  */
+    /* border-radius: 15px; */
+    color: white;
     display: inline-block;
     float: left;
-    /*position: fixed;*/
 }
-.sidebar h2 {
+#sidebar h2 {
     text-align: center;
 }
-.sidebar li {
+#sidebar li {
     list-style: none;
 }
 .well, .ok, .shrug {
@@ -98,54 +159,18 @@ a {
     margin: 10% 0 0 20%;
 }
 /*content: projects, about me, photos, etc*/
-.content {
-    height: 3000px;
-    color: black;
-    /*background-color: purple;*/
-    width: 74vw;
-    /* border: 1px solid red; */
-    /* display: inline-block; */
-    /* margin-right: 1%; */
-    margin-left: 22vw;
-}
-.banner-name {
-    font-size: 30px;
-    color: black;
-    display: inline-block;
-    margin: 0 3%;
-    padding: 1% 1%;
-}
-.about-me-container {
-    width: 100%;
-    /* height: 15%; */
-    height: 85vh;
-    /*border: 1px solid red; */
-    /* padding-top: 30%; */
-    margin: 2% 0 0 0;
-    float: left;
-}
-#about-me {
-    top: 5%;
-    height: 90%;
-    width: 97%;
-    padding: 1% 1%;
-    position: relative;
-}
 #project-section {
-    /* height: 550px; */
     height: 100vh;
-    width: 95%;
-    margin: -12% 0 0 2%;
-    /* border: 1px solid green; */
-    float: left;
+    width: 78vw;
+    border: 1px solid green ;
+    display: inline-block;
 }
 .project-container {
-    /*margin-top: 5%;*/
-    /* height: 400px; */
-    height: 85vh;
-    width: 100%;
+    height: 85%;
+    width: 95%;
     margin: 3% 0 0 2%;
-    float: left;
+    border: 1px solid red;
+    /* float: left; */
 }
 .icons {
     height: 60px;
@@ -202,3 +227,21 @@ a {
 #spotify-logo {
     clip-path: circle(42.5% at 52.5% 50%);
 }
+
+.about-me-container {
+    width: 100%;
+    /* height: 15%; */
+    height: 85vh;
+    /*border: 1px solid red; */
+    /* padding-top: 30%; */
+    margin: 2% 0 0 0;
+    float: left;
+}
+#about-me {
+    top: 5%;
+    height: 90%;
+    width: 97%;
+    padding: 1% 1%;
+    position: relative;
+}
+
