@@ -76,6 +76,7 @@ ul {
     height: 100vh;
     width: 100%;
     /*background-color: purple;*/
+    /* background-image: url('./venice.jpg'); */
     /* background-image: url('http://getwallpapers.com/wallpaper/full/5/1/c/1178449-download-ios-8-stock-wallpapers-1920x1080.jpg'); */
     /* background-image: url('./low-poly-texture-18.png'); */
     background-image: url('https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Ff.vividscreen.info%2Fsoft%2F16ea3ca51ac3031391e6c7743ca58235%2FOnePlus-One-1920x1200.jpg&f=1');
@@ -93,7 +94,6 @@ ul {
     /* margin: 25% 0 0 25%; */
     top: 40%;
     left: 30%;
-    /* right: 25%; */
     position: absolute;
 }
 .links ul {
@@ -169,7 +169,7 @@ ul {
     height: 85%;
     width: 95%;
     margin: 3% 0 0 2%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* float: left; */
 }
 .icons {
@@ -177,10 +177,13 @@ ul {
     width: 60px;
 }
 .project-row {
-    height: 20%;
+    height: 22.5%;
     width: 100%;
-    margin: 0 0 4% 0;
-    /* border: 1px solid black; */
+    color: white;
+    margin: 0 0 2% 0;
+    /* border: 1px solid #DC0176; */
+    border-radius: 15px;
+    background-color: #DC0176;
 }
 
 .project-icons {
