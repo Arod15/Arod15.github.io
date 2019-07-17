@@ -13,12 +13,15 @@
 	<script src="./script.js"></script>
 </head>
 
-<body>
+<body onload="fadein()">
 	<div class="banner">
 		<div class="nav-bar">
 			<div class="signature">Andrés José Rodríguez</div>
 			<div class="nav">
 				<ul>
+					<li>
+						<a href="#bio" style="color: white; text-decoration: none;">About Me</a>
+					</li>
 					<li>
 						<a href="#sidebar" style="color: white; text-decoration: none;">Projects</a>
 					</li>
@@ -28,7 +31,7 @@
 			</div>
 		</div>
 		<div class="welcome-contact-container">
-			<div class="welcome">Welcome, friend!</div>
+			<div id="test" class="welcome" onclick="fade(this)" style="visibility: hidden;">Welcome, friend!</div>
 			<div class="links">
 				<ul>
 					<li>
@@ -45,6 +48,7 @@
 			</div>
 		</div>
 	</div>
+	<div id="bio"></div>
 	<div class="sidebar-projects-container">
 		<div id="sidebar">
 			<div class="photo">
