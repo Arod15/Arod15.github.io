@@ -119,7 +119,8 @@ ul {
 #bio {
     height: 100vh;
     width: 100%;
-    background-color: #F20051;
+    /*background-color: #cc1651;*/
+    background-color: #D73167;
 }
 
 /*sidebar, projects*/
@@ -131,7 +132,8 @@ ul {
     height: 100vh;
     width: 20vw;
     /* background-color: #0F94C4; */
-    background-color: #DA3176;
+    background-color: #cc1651;
+    /*background-color:   #D32F6B;*/
     /*background-color: #ABDFF2;*/
     /* border: 1px solid black;  */
     /* border-radius: 15px; */
