@@ -13,11 +13,11 @@
 	<script src="./script.js"></script>
 </head>
 
-<body onload="fadein()">
+<body onload="fadeIn()">
 	<div class="banner">
-		<div class="nav-bar">
-			<div class="signature">Andrés José Rodríguez</div>
-			<div class="nav">
+		<div id="nav-bar" style="opacity: 0;">
+			<div id="signature">Andrés José Rodríguez</div>
+			<div id="nav">
 				<ul>
 					<li>
 						<a href="#bio" style="color: white; text-decoration: none;">About Me</a>
@@ -31,8 +31,8 @@
 			</div>
 		</div>
 		<div class="welcome-contact-container">
-			<div id="test" class="welcome" onclick="fade(this)" style="opacity: 0;">Welcome, friend!</div>
-			<div class="links">
+			<div id="welcome" style="opacity: 0;">Welcome, friend!</div>
+			<div id="links" style="opacity: 0;">
 				<ul>
 					<li>
 						<a href="https://www.linkedin.com/in/andres-rodriguez-a3662a15b/">
@@ -48,18 +48,23 @@
 			</div>
 		</div>
 	</div>
-	<div id="bio"></div>
+	<div id="bio">
+		<h1>WHO AM I?</h1>
+		<div class="photo">
+			<img class="circle" src="../../assets/linked_in.png"/>
+		</div>
+	</div>
 	<div class="sidebar-projects-container">
 		<div id="sidebar">
 			<div class="photo">
-				<img class="circle" src="../../face.jpg"/>
+				<img class="circle" src="../../assets/face.jpg"/>
 				<!-- <img src="./linked_in.png" alt="my face" class="circle"/> -->
 			</div>
 			<h2>Andrés José Rodríguez</h2>
 		</div>
 		<!-- <div style="height: 100%; width: 1px; border: 1px solid black;"></div> -->
 		<div id="project-section">
-			<h1 style="text-align: center;">Projects</h1>
+			<h1 style="text-align: center; color: white">Projects</h1>
 			<div class="project-container">
 				<div class="project-row">
 					<div class="project-icons">
@@ -93,7 +98,7 @@
 				<div class="project-row">
 					<div class="project-icons">
 						<a href="https://github.com/Arod15/Switch-Scraper">
-							<img src="https://raw.githubusercontent.com/Arod15/Switch-Scraper/master/static/imgs/favicon.png" />
+							<img src="../../assets/switch_scraper_logo_clean.png" />
 						</a>
 					</div>
 					<div class="project-text">

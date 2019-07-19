@@ -8,6 +8,7 @@
 /*html elements*/
 html {
     scroll-behavior: smooth;
+    background-color: #D73167;
 }
 body {
     height: 1000px;
@@ -39,7 +40,7 @@ ul {
 }
 
 /*nav-bar, banner, title*/
-.nav-bar {
+#nav-bar {
     height: 10vh;
     width: 95%;
     /* border: 1px solid red; */
@@ -47,7 +48,7 @@ ul {
     left: 2.5%;
     position: absolute;
 }
-.signature {
+#signature {
     height: 90%;
     /*width: 30%;*/
     width: 30vw;
@@ -59,7 +60,7 @@ ul {
     display: inline-block;
     padding-top: 0.5%;
 }
-.nav {
+#nav {
     height: 100%;
     /*width: 68%;*/
     width: 63vw;
@@ -68,7 +69,7 @@ ul {
     /* margin-right: 2%; */
     float: right;
 }
-.nav li {
+#nav li {
     font-size: 35px;
     color: white;
     display: inline-block;
@@ -77,14 +78,8 @@ ul {
 .banner {
     height: 100vh;
     width: 100%;
-    /*background-color: purple;*/
-     /*background-image: url('./venice.jpg'); */
-    /*background-image: url('http://getwallpapers.com/wallpaper/full/5/1/c/1178449-download-ios-8-stock-wallpapers-1920x1080.jpg'); */
-    /*background-image: url('./low-poly-texture-18.png'); */
-    background-image: url('https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Ff.vividscreen.info%2Fsoft%2F16ea3ca51ac3031391e6c7743ca58235%2FOnePlus-One-1920x1200.jpg&f=1');
-    /*background-image: url('https://wallpaperstock.net/abstract-black-shapes_wallpapers_35595_1920x1080.jpg');*/
-    /*background-image: url('./comutronix-llc-1.png');*/
-
+    /* background-image: url('https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Ff.vividscreen.info%2Fsoft%2F16ea3ca51ac3031391e6c7743ca58235%2FOnePlus-One-1920x1200.jpg&f=1'); */
+    background-image: url('../../assets/op1.png');
     background-size: 100% 100%;
     position: relative;
 }
@@ -101,18 +96,18 @@ ul {
     left: 30%;
     position: absolute;
 }
-.links ul {
+#links ul {
     height: 40%;
 }
-.links li {
+#links li {
     height: 40px;
     width: 40px;
     display: inline-block;
     position: relative;
 }
-.links li:active {
-    height: 35px;
-    width: 35px;
+#links li:active, #links li:hover {
+    height: 37.5px;
+    width: 37.5px;
 }
 
 /*biography section*/
@@ -120,7 +115,7 @@ ul {
     height: 100vh;
     width: 100%;
     /*background-color: #cc1651;*/
-    background-color: #D73167;
+    /* background-color: #D73167; */
 }
 
 /*sidebar, projects*/
@@ -176,7 +171,7 @@ ul {
 #project-section {
     height: 100vh;
     width: 78vw;
-    border: 1px solid green ;
+    /* border: 1px solid green; */
     display: inline-block;
 }
 .project-container {
@@ -195,9 +190,9 @@ ul {
     width: 100%;
     color: white;
     margin: 0 0 2% 0;
-    /* border: 1px solid #DC0176; */
-    border-radius: 15px;
-    background-color: #DC0176;
+    border: 1px solid white;
+    /* border-radius: 15px; */
+    /* background-color: #DC0176; */
 }
 
 .project-icons {

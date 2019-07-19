@@ -2,13 +2,25 @@ function fade(obj) {
 	console.log(obj);
 	setTimeout(function() {obj.innerHTML = "Woah"}, 1000);
 }
-function fadein() {
-	let obj = document.getElementById('test');
-	console.log(obj);
-	// setTimeout(function() {obj.style.visibility = "visible";}, 1000);
-	for (int i = 1; i < 10; i++) {
-		let opac = obj.style.opacity
-		setTimeout(function() {obj.style.opacity = ""})
+function fadeIn() {
+	// let obj = document.getElementById('test');
+	let navBar = document.getElementById('nav-bar');
+	let signature = document.getElementById('signature');
+	let nav = document.getElementById('nav');
+	let title = document.getElementById('welcome');
+	let links = document.getElementById('links');
+	fadeInHelper(navBar);
+	// fadeInHelper(signature);
+	// fadeInHelper(nav);
+	setTimeout(fadeInHelper(title), 100);
+	setTimeout(fadeInHelper(links), 1000);
+	
+}
+function fadeInHelper(obj) {
+	for (i = 1; i <= 10000; i++) {
+		let opac = Number(obj.style.opacity) + (.0001 * i);
+		console.log(opac);
+		setTimeout(function() {obj.style.opacity = opac.toString()}, 3000);
+		console.log(obj.style.opacity);
 	}
-	console.log(obj.style.visibility);
 }
