@@ -99,7 +99,7 @@ ul {
     /* margin-left: 20%; */
 }
 /*content: projects, about me, photos, etc*/
-#PROJECTS {
+#PROJECTS, #BIO {
     height: 100vh;
     width: 78vw;
     /* border: 1px solid green; */
