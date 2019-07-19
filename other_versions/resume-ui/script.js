@@ -31,11 +31,13 @@ function swap(string) {
 	let arr = ['PROJECTS', 'BIO', 'INTERESTS', 'GAMES'];
 	// let arr = ['PROJECTS'];
 	arr.forEach(section => {
+		// console.log(section);
 		let sectionObj = document.getElementById(section);
+		// console.log(sectionObj);
 		if (section === string) {
 			sectionObj.style.display = "inline-block";
 		} else if (section !== string && sectionObj.style.display !== "none") {
-			section.style.display = "none";
+			try {sectionObj.style.display = "none";} catch (err) {console.log(`${section}: ${err}`);}
 		}
 	});
 }
