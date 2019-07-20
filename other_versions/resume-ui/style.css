@@ -71,16 +71,17 @@ ul {
     height: 25%;
     width: 200px;
     /*border: 1px solid red;*/
+    margin: 10% auto 0 auto;
     /* float: left; */
 }
 .photo img {
     max-width: 100%;
     max-height: 100%;
-    margin: 10% 0 0 20%;
+    /* margin: 10% 0 0 20%; */
 }
 .links ul {
     height: 100%;
-    padding-left: 30%;
+    padding-left: 25%;
 }
 .links li {
     height: 40px;
@@ -94,25 +95,42 @@ ul {
     width: 37.5px;
 }
 .vert-nav {
-    margin-top: 5%;
+    margin-top: 25%;
     text-align: center;
     font-size: 40px;
     /* margin-left: 20%; */
 }
+.vert-nav li {
+    margin-bottom: 5%;
+}
 /*content: projects, about me, photos, etc*/
-#PROJECTS, #BIO, #INTERESTS, #GAMES {
+#HOME, #PROJECTS, #BIO, #INTERESTS, #GAMES {
     height: 100vh;
     width: 78vw;
-     /*border: 1px solid green; */
+     /* border: 1px solid green; */
     display: inline-block;
 }
+.HOME-box {
+    height: 12.5%; 
+    width: 95%; 
+    /* border: 1px solid white;  */
+    margin: 30% auto 0 auto;
+}
+.HOME-box .button {
+    width: 40%; 
+    display: inline-block; 
+    margin-left: 0%;
+    margin-top: 0;
+    /* border: 1px solid white; */
+}
+
 .button h2 {
     margin: 5% auto;
 }
 .project-container {
     height: 85%;
     width: 95%;
-    margin: 3% 0 0 2%;
+    margin: 1% auto 0 auto;
     /* border: 1px solid red; */
     /* float: left; */
 }
@@ -121,11 +139,13 @@ ul {
     width: 60px;
 }
 .project-row {
-    height: 22.5%;
+    /* height: 22.5%; */
+    height: 22%;
     width: 100%;
     color: white;
     margin: 0 0 2% 0;
     border: 1px solid white;
+    padding-top: 1%;
     /* border-radius: 15px; */
     /* background-color: #DC0176; */
 }
@@ -176,10 +196,11 @@ ul {
 
 /*BIO*/
 .BIO-text {
-    height: 70%;
-    width: 95%;
+    height: 62.5%;
+    width: 90%;
     font-size: 24px;
     color: white;
     border: 1px solid white;
-    margin: 0 auto;
+    margin: 1% auto 0 auto;
+    padding-left: 5%;
 }

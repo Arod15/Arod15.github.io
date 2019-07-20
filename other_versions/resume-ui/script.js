@@ -28,7 +28,7 @@ function fadeInHelper(obj) {
 
 
 function swap(string) {
-	let arr = ['PROJECTS', 'BIO', 'INTERESTS', 'GAMES'];
+	let arr = ['HOME', 'PROJECTS', 'BIO', 'INTERESTS', 'GAMES'];
 	// let arr = ['PROJECTS'];
 	arr.forEach(section => {
 		// console.log(section);

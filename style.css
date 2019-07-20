@@ -5,186 +5,202 @@
 @import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
-/*basic elements*/
-
-* {
-    box-sizing: border-box;
-}
-a {
-    text-decoration: none;
-    color: white;
-    text-shadow: 1px 1px black;
-}
+/*html elements*/
 html {
-    background-color: #B9EFFF;
-    /* background-color: #91619E; */
-    /*background-color: rgba(150, 100, 255);*/
+    scroll-behavior: smooth;
+    background-color: #D73167;
 }
 body {
-    margin: 0 0;
+    height: 100vh;
+    margin: 0;
+    font-family: Roboto;
+    /*background-color: purple;*/
+    /* background-color: red; */
 }
 img {
     max-width: 100%;
     max-height: 100%;
-    display: inline-block;
+    /* object-fit: none; */
 }
-/*layout styles*/
+a {
+    text-decoration: none;
+    color: black;
+}
+ul {
+    margin: 0 auto;
+    padding-left: 0;
+    list-style: none;
+}
+/*general classes*/
 .circle {
     clip-path: circle(50% at 50% 50%);
 }
-.pages {
-    width: 100%;  
-    height: 750px;
-    padding-left: 5%;
-    padding-right: 5%;
+.bubble {
+    border-radius: 10px;
+    /*background-color: #0F94C4;*/
 }
-.content {
-    font-family: Karla;
+.button {
+    height: auto;
+    width: 12.5%;
+    border: 1px solid white;
+    text-align: center;
     color: white;
-    text-shadow: 1px 1px black;
+    background-color: #cc1651;
+    margin: 1% auto 0 auto;
 }
-.rounded {
-    border-radius: 25px;
-    border: 1px solid black;
-}
-img.rounded {
-    padding: 0px;
-}
-.debug {
-    border: 1px red dotted;
-}
-#intro, .left-project, .right-project {
-    color: white;
-    text-shadow: 1px 1px black;
-}
-/*section 1: banner, nav*/
 
-.nav {
-    margin: 0 auto;
-    padding-left: 0;
-    height: 12vh;
+/*sidebar, projects*/
+.sidebar-projects-container {
+    height: 100vh;
     width: 100%;
-    position: fixed;
-    z-index: 100;
-    /* background-color: #3895B2; */
-    background-color: #009CCC;
 }
-.nav li {
+#sidebar {
+    height: 100vh;
+    width: 20vw;
+    /* background-color: #0F94C4; */
+    background-color: #cc1651;
+    /*background-color:   #D32F6B;*/
+    /*background-color: #ABDFF2;*/
+    /* border: 1px solid black;  */
+    /* border-radius: 15px; */
+    color: white;
     display: inline-block;
-    padding: 0 2%;
-    width: 15%;
+    float: left;
+}
+.photo {
+    height: 25%;
+    width: 200px;
+    /*border: 1px solid red;*/
+    margin: 10% auto 0 auto;
+    /* float: left; */
+}
+.photo img {
+    max-width: 100%;
+    max-height: 100%;
+    /* margin: 10% 0 0 20%; */
+}
+.links ul {
+    height: 100%;
+    padding-left: 25%;
+}
+.links li {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    margin-right: 5%; 
+    /* position: relative; */
+}
+.links li:active, .links li:hover {
+    height: 37.5px;
+    width: 37.5px;
+}
+.vert-nav {
+    margin-top: 25%;
     text-align: center;
+    font-size: 40px;
+    /* margin-left: 20%; */
 }
-#banner {
-    background-image: url("./map.png");
-    /*background-color: rgba(150, 100, 255);*/
-    background-size: 100%;
-    /* height: 650px; */
-    height: 90vh;
-    border: 1px white;
-    margin-top: 0;
-}
-.banner-name {
-    width: 45%;
-    font-size: 50px;
-    color: white;
-    /*font-family: Roboto;*/
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20%;
-}
-.banner-name, .nav li, .titles {
-    font-family: 'Cedarville Cursive', cursive, sans-serif;
-    color: white;
-    text-shadow: 1px 1px black;
-}
-/*section 2: intro, profile picture*/
-#intro-start {
+.vert-nav li {
     margin-bottom: 5%;
 }
-#intro-section {
-    padding-top: 5%;
-    margin-bottom: 10%;
+/*content: projects, about me, photos, etc*/
+#HOME, #PROJECTS, #BIO, #INTERESTS, #GAMES {
+    height: 100vh;
+    width: 78vw;
+     /* border: 1px solid green; */
+    display: inline-block;
 }
-#intro {
-    width: 50%;
-    float: left;
-    margin-top: 50px;
-    padding-left: 2%;
-    padding-right: 2%;
-    border: 1px solid grey;
-    background-color: #009CCC;
-    border-radius: 50px;
-    font-family: 'Cedarville Cursive', cursive, sans-serif;
+.HOME-box {
+    height: 12.5%; 
+    width: 95%; 
+    /* border: 1px solid white;  */
+    margin: 30% auto 0 auto;
 }
-#face {
-    /*width: 400px;*/
-    width: 50%;
-    height: 100%;
-    float: right;
-    padding-top: 5%;
+.HOME-box .button {
+    width: 40%; 
+    display: inline-block; 
+    margin-left: 0%;
+    margin-top: 0;
+    /* border: 1px solid white; */
 }
 
-/*section 3: projects*/
-#project-section {
-    padding-top: 3%;
+.button h2 {
+    margin: 5% auto;
 }
 .project-container {
-    margin-top: 5%;
-    height: 700px;
+    height: 85%;
+    width: 95%;
+    margin: 1% auto 0 auto;
+    /* border: 1px solid red; */
+    /* float: left; */
 }
 .icons {
     height: 60px;
     width: 60px;
 }
 .project-row {
-    height: 30%;
+    /* height: 22.5%; */
+    height: 22%;
     width: 100%;
-    margin: 0% 5% 5% 3%;
-    /*border: 3px solid black;*/
-}
-.left-project, .right-project {
-    height: 100%;
-    width: 49%;
-    font-family: Karla;
-    display: inline-block;
-/*    border: 1px solid black;
-    border-radius: 25px;*/
-    background-color: #009CCC;
-    /*float: left;*/
-}
-.left-project {
-    float: left;
-}
-.right-project {
-    float: right;
+    color: white;
+    margin: 0 0 2% 0;
+    border: 1px solid white;
+    padding-top: 1%;
+    /* border-radius: 15px; */
+    /* background-color: #DC0176; */
 }
 .project-icons {
     height: 100%;
-    width: 30%;
-    display: inline-block;
+    width: 15%;;
+    /* display: inline-block; */
     float: left;
-    padding-top: 3%;
+    /* padding-top: 3%; */
+}
+.project-icons img {
+    max-width: 90%;
+    max-height: 90%;
+    padding: 0% 0 0 5%;
+}
+#snoo {
+    max-width: 75%;
+    max-height: 75%;
+    margin-left: 10%;
+    padding-top: 10%; 
 }
 .project-text {
     font-family: 'Nunito', sans-serif;
-    color: white;
-
-    font-size: 14px;
-    width: 65%;
+    /* color: white; */
+    /* font-size: 14px; */
+    width: 80%;
     height: 100%;
-    padding-left: 2%;
-    padding-top: 2%;
-    display: inline-block;
+    /*padding-left: 2%;
+    padding-top: 2%;*/
     float: left;
 }
 .project-text h2 {
-    margin-top: 0;
+    margin: 0 auto;
+    display: inline;
+    /* font-size: 20px; */
+}
+.date {
+    display: inline-block;
+    float: right;
 }
 .project-text p {
     margin-bottom: 0;
+    font-size: 17px;
 }
 #spotify-logo {
-    clip-path: circle(40% at 50% 50%);
+    clip-path: circle(42.5% at 52.5% 50%);
+}
+
+/*BIO*/
+.BIO-text {
+    height: 62.5%;
+    width: 90%;
+    font-size: 24px;
+    color: white;
+    border: 1px solid white;
+    margin: 1% auto 0 auto;
+    padding-left: 5%;
 }
