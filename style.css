@@ -14,8 +14,6 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Roboto;
-    /*background-color: purple;*/
-    /* background-color: red; */
 }
 img {
     max-width: 100%;
@@ -31,17 +29,12 @@ ul {
     padding-left: 0;
     list-style: none;
 }
+
 /*general classes*/
 .circle {
     clip-path: circle(50% at 50% 50%);
 }
-.bubble {
-    border-radius: 10px;
-    /*background-color: #0F94C4;*/
-}
 .button {
-    height: auto;
-    width: 12.5%;
     border: 1px solid white;
     text-align: center;
     color: white;
@@ -50,34 +43,21 @@ ul {
 }
 
 /*sidebar, projects*/
-.sidebar-projects-container {
-    height: 100vh;
-    width: 100%;
-}
 #sidebar {
     height: 100vh;
     width: 20vw;
-    /* background-color: #0F94C4; */
     background-color: #cc1651;
-    /*background-color:   #D32F6B;*/
-    /*background-color: #ABDFF2;*/
-    /* border: 1px solid black;  */
-    /* border-radius: 15px; */
     color: white;
     display: inline-block;
-    float: left;
 }
-.photo {
-    height: 25%;
-    width: 200px;
-    /*border: 1px solid red;*/
-    margin: 10% auto 0 auto;
-    /* float: left; */
+.squirtle-box {
+    height: 15%;
+    width: 100%; 
+    /* padding-left: 30%;  */
+    margin: 10% 0;
 }
-.photo img {
-    max-width: 100%;
-    max-height: 100%;
-    /* margin: 10% 0 0 20%; */
+.squirtle-box img {
+    margin-left: 30%;
 }
 .links ul {
     height: 100%;
@@ -88,73 +68,79 @@ ul {
     width: 40px;
     display: inline-block;
     margin-right: 5%; 
-    /* position: relative; */
 }
 .links li:active, .links li:hover {
     height: 37.5px;
     width: 37.5px;
 }
 .vert-nav {
-    margin-top: 25%;
+    margin-top: 20%;
     text-align: center;
     font-size: 40px;
     /* margin-left: 20%; */
 }
 .vert-nav li {
-    margin-bottom: 5%;
+    margin-bottom: 10%;
+}
+.vert-nav li:hover {
+    cursor: pointer;
+}
+.vert-nav li div {
+    width: 75%;
+    background-color: #D73167;
 }
 /*content: projects, about me, photos, etc*/
 #HOME, #PROJECTS, #BIO, #INTERESTS, #GAMES {
     height: 100vh;
     width: 78vw;
-     /* border: 1px solid green; */
+    /* border: 1px solid green; */
     display: inline-block;
+    float: right;
 }
 .HOME-box {
-    height: 12.5%; 
+    height: 12%; 
     width: 95%; 
     /* border: 1px solid white;  */
     margin: 30% auto 0 auto;
 }
+.HOME-box h1 {
+    font-size: 40px; 
+    color: white; 
+}
 .HOME-box .button {
     width: 40%; 
-    display: inline-block; 
-    margin-left: 0%;
-    margin-top: 0;
-    /* border: 1px solid white; */
+    display: inline-block;
 }
 
-.button h2 {
+.button h1 {
     margin: 5% auto;
+}
+#PROJECTS .button {
+    width: 15%;
 }
 .project-container {
     height: 85%;
     width: 95%;
     margin: 1% auto 0 auto;
     /* border: 1px solid red; */
-    /* float: left; */
 }
 .icons {
     height: 60px;
     width: 60px;
 }
 .project-row {
-    /* height: 22.5%; */
     height: 22%;
     width: 100%;
     color: white;
     margin: 0 0 2% 0;
     border: 1px solid white;
     padding-top: 1%;
-    /* border-radius: 15px; */
-    /* background-color: #DC0176; */
 }
 .project-icons {
     height: 100%;
     width: 15%;;
     /* display: inline-block; */
     float: left;
-    /* padding-top: 3%; */
 }
 .project-icons img {
     max-width: 90%;
@@ -162,19 +148,15 @@ ul {
     padding: 0% 0 0 5%;
 }
 #snoo {
-    max-width: 75%;
-    max-height: 75%;
+    max-width: 80%;
+    max-height: 80%;
     margin-left: 10%;
     padding-top: 10%; 
 }
 .project-text {
     font-family: 'Nunito', sans-serif;
-    /* color: white; */
-    /* font-size: 14px; */
     width: 80%;
     height: 100%;
-    /*padding-left: 2%;
-    padding-top: 2%;*/
     float: left;
 }
 .project-text h2 {
@@ -195,11 +177,15 @@ ul {
 }
 
 /*BIO*/
+#BIO .button {
+    width: 10%;
+}
 .BIO-text {
     height: 62.5%;
     width: 90%;
     font-size: 24px;
     color: white;
+    background-color: #cc1651;
     border: 1px solid white;
     margin: 1% auto 0 auto;
     padding-left: 5%;
