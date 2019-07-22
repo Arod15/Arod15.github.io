@@ -1,6 +1,10 @@
-function fade(obj) {
-	console.log(obj);
-	setTimeout(function() {obj.innerHTML = "Woah"}, 1000);
+function main1() {
+	let fakebar = document.getElementById("fakebar");
+	fakebar.style.display = "inline-block";
+	let animation = setInterval(function() {
+		console.log(fakebar.style.height);
+		// if (fakebar.style.width === "20")
+	}, 2000);
 }
 function fadeIn() {
 	// let obj = document.getElementById('test');
