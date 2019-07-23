@@ -1,35 +1,43 @@
 function main1() {
-	let fakebar = document.getElementById("fakebar");
-	fakebar.style.display = "inline-block";
+	renderSideBar();
+	let sideBar = document.getElementById("sidebar");
+
+
+}
+function renderSideBar() {
+	let sideBar = document.getElementById("sidebar");
+	sideBar.style.display = "inline-block";
+	let vh = window.innerWidth / 5;
+	let inc = vh / 7;
 	let animation = setInterval(function() {
-		console.log(fakebar.style.height);
-		// if (fakebar.style.width === "20")
-	}, 2000);
+		if (sideBar.clientWidth + inc >= vh) {
+			clearInterval(animation);
+			return;
+		}
+		sideBar.style.width = (sideBar.clientWidth + inc).toString() + "px";
+	}, 10);
+	// setTimeout(function () {sideBar.style.display = "none";}, 75);
+	unhide('squirtle-box');
 }
-function fadeIn() {
-	// let obj = document.getElementById('test');
-	let navBar = document.getElementById('nav-bar');
-	let signature = document.getElementById('signature');
-	let nav = document.getElementById('nav');
-	let title = document.getElementById('welcome');
-	let links = document.getElementById('links');
-	fadeInHelper(navBar);
-	// fadeInHelper(signature);
-	// fadeInHelper(nav);
-	setTimeout(fadeInHelper(title), 100);
-	setTimeout(fadeInHelper(links), 1000);
-	
+function hide(className) {
+	let classObjs = document.getElementsByClassName(className);
+	classObjs.forEach(obj => {
+		obj.className += " hide";
+	});
 }
-function fadeInHelper(obj) {
-	for (i = 1; i <= 10000; i++) {
-		let opac = Number(obj.style.opacity) + (.0001 * i);
-		console.log(opac);
-		setTimeout(function() {obj.style.opacity = opac.toString()}, 3000);
-		console.log(obj.style.opacity);
-	}
+function unhide(className) {
+	let classObjs = document.getElementsByClassName(className);
+	// fix the for loop
+	for (i = 0; i < classObjs.length; i++) {
+		if (obj.className.length < 5) {
+			console.log('not long enough to have hide class');
+		} else if (obj.className.slice(-5, obj.className.length) !== " hide") {
+			console.log('didn\'t have hide class');
+		} else {
+			obj.className = obj.className.slice(0, -5);
+		}
+	};
 }
-
-
 
 function swap(string) {
 	let arr = ['HOME', 'PROJECTS', 'BIO', 'INTERESTS', 'GAMES'];
