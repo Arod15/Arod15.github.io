@@ -1,12 +1,9 @@
 function main1() {
 	renderSideBar();
-	let sideBar = document.getElementById("sidebar");
-
-
 }
 function renderSideBar() {
 	let sideBar = document.getElementById("sidebar");
-	sideBar.style.display = "inline-block";
+	unhide('sidebar');
 	let vh = window.innerWidth / 5;
 	let inc = vh / 7;
 	let animation = setInterval(function() {
@@ -16,27 +13,54 @@ function renderSideBar() {
 		}
 		sideBar.style.width = (sideBar.clientWidth + inc).toString() + "px";
 	}, 10);
-	// setTimeout(function () {sideBar.style.display = "none";}, 75);
-	unhide('squirtle-box');
+	setTimeout(function() {
+		unhide('squirtle-box');
+		unhide('links');
+		unhide('vert-nav');
+	}, 1000);
 }
-function hide(className) {
-	let classObjs = document.getElementsByClassName(className);
-	classObjs.forEach(obj => {
-		obj.className += " hide";
-	});
-}
-function unhide(className) {
-	let classObjs = document.getElementsByClassName(className);
-	// fix the for loop
+function hide(name) {
+	let classObjs = document.getElementsByClassName(name);
+	if (classObjs.length === 0) {
+		classObjs = [document.getElementById(name)];
+	}
 	for (i = 0; i < classObjs.length; i++) {
-		if (obj.className.length < 5) {
-			console.log('not long enough to have hide class');
-		} else if (obj.className.slice(-5, obj.className.length) !== " hide") {
-			console.log('didn\'t have hide class');
+		if (classObjs[i].length < 5) {
+			classObjs[i].className += " hide";
+			console.log(`${classObjs[i].className} is now hidden`);
+		} else if (classObjs[i].className.slice(-5, classObjs[i].className.length) === " hide") {
+			console.log(`can\'t hide ${classObjs[i]["className"]}; it is already hidden`);
 		} else {
-			obj.className = obj.className.slice(0, -5);
+			classObjs[i].className += " hide";
+			console.log(`${classObjs[i].className} is now hidden`);
 		}
-	};
+	}
+}
+function unhide(name) {
+	let flag = "className";
+	let classObjs = document.getElementsByClassName(name);
+	if (classObjs.length === 0) {
+		classObjs = [document.getElementById(name)];
+		flag = "id";
+	}
+	console.log(classObjs);
+	for (i = 0; i < classObjs.length; i++) {
+		if (classObjs[i].className.length < 5) {
+			if (classObjs[i].className === "hide") {
+				classObjs[i].className = "";
+				console.log(`successfully revealed ${classObjs[i][flag]}`);
+			} else {
+				console.log(`${classObjs[i][flag]} can't possibly be unhidden`);
+			}
+		} else if (classObjs[i].className.slice(-5, classObjs[i].className.length) !== " hide") {
+			console.log(classObjs[i][flag].slice(-5, classObjs[i][flag].length));
+			console.log(`${classObjs[i][flag]} didn't include hide class`);
+		} else {
+			classObjs[i].className = classObjs[i].className.slice(0, -5);
+			console.log(`successfully revealed ${classObjs[i][flag]}`);
+		}
+	}
+	console.log(classObjs);
 }
 
 function swap(string) {
