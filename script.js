@@ -1,5 +1,6 @@
 function main1() {
 	renderSideBar();
+	setTimeout(function () {unhide('HOME');}, 2000);
 }
 function renderSideBar() {
 	let sideBar = document.getElementById("sidebar");
@@ -20,19 +21,21 @@ function renderSideBar() {
 	}, 1000);
 }
 function hide(name) {
+	let flag = "className";
 	let classObjs = document.getElementsByClassName(name);
 	if (classObjs.length === 0) {
 		classObjs = [document.getElementById(name)];
+		flag = "id";
 	}
 	for (i = 0; i < classObjs.length; i++) {
 		if (classObjs[i].length < 5) {
 			classObjs[i].className += " hide";
-			console.log(`${classObjs[i].className} is now hidden`);
+			console.log(`${classObjs[i][flag]} is now hidden`);
 		} else if (classObjs[i].className.slice(-5, classObjs[i].className.length) === " hide") {
-			console.log(`can\'t hide ${classObjs[i]["className"]}; it is already hidden`);
+			console.log(`can\'t hide ${classObjs[i][flag]}; it is already hidden`);
 		} else {
 			classObjs[i].className += " hide";
-			console.log(`${classObjs[i].className} is now hidden`);
+			console.log(`${classObjs[i][flag]} is now hidden`);
 		}
 	}
 }
@@ -43,7 +46,7 @@ function unhide(name) {
 		classObjs = [document.getElementById(name)];
 		flag = "id";
 	}
-	console.log(classObjs);
+	// console.log(classObjs);
 	for (i = 0; i < classObjs.length; i++) {
 		if (classObjs[i].className.length < 5) {
 			if (classObjs[i].className === "hide") {
@@ -71,9 +74,10 @@ function swap(string) {
 		let sectionObj = document.getElementById(section);
 		// console.log(sectionObj);
 		if (section === string) {
+			unhide(string);
 			sectionObj.style.display = "inline-block";
-		} else if (section !== string && sectionObj.style.display !== "none") {
-			try {sectionObj.style.display = "none";} catch (err) {console.log(`${section}: ${err}`);}
+		} else {
+			hide(string);
 		}
 	});
 }
