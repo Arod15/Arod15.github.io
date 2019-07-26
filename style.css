@@ -45,6 +45,9 @@ ul {
 .hide {
     display: none;
 }
+.unhide {
+    display: inline-block;
+}
 /*crappy animations*/
 
 
@@ -59,7 +62,7 @@ ul {
 }
 .squirtle-box {
     height: 15%;
-    width: 100%; 
+    width: 99%; 
     /* padding-left: 30%;  */
     margin: 0 auto 5% auto;
 }
@@ -68,6 +71,7 @@ ul {
 }
 .links {
     height: 10vh;
+    width: 99%;
 }
 .links ul {
     height: 100%;
@@ -85,6 +89,7 @@ ul {
     width: 37.5px;
 }
 .vert-nav {
+    width: 99%;
     margin-top: 20%;
     text-align: center;
     font-size: 40px;
