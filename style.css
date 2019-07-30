@@ -8,13 +8,14 @@
 /*html elements*/
 html {
     scroll-behavior: smooth;
-    background-color: #D73167;
 }
 body {
     height: 100vh;
     margin: 0;
     font-family: Roboto;
-    /*overflow-y: hidden;*/
+    overflow-y: hidden;
+    /*background-color: #D73167;*/
+    background-color: #3D3333;
 }
 img {
     max-width: 100%;
@@ -39,14 +40,9 @@ ul {
     border: 1px solid white;
     text-align: center;
     color: white;
-    background-color: #cc1651;
+    /*background-color: #cc1651;*/
+    background-color: #1E1A1A;
     margin: 1% auto 0 auto;
-}
-.hide {
-    display: none;
-}
-.unhide {
-    display: inline-block;
 }
 /*crappy animations*/
 
@@ -56,7 +52,9 @@ ul {
     height: 100vh;
     /*width: 20vw;*/
     width: 0;
-    background-color: #cc1651;
+    /*background-color: #cc1651;*/
+    /*background-color: #3D3333;*/
+    background-color: #1E1A1A;
     color: white;
     display: inline-block;
 }
@@ -65,34 +63,43 @@ ul {
     width: 99%; 
     /* padding-left: 30%;  */
     margin: 0 auto 5% auto;
+    display: none;
 }
 .squirtle-box img {
     margin-left: 30%;
 }
+.name {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    display: none;
+}
 .links {
     height: 10vh;
     width: 99%;
+    display: none;
 }
 .links ul {
     height: 100%;
-    padding-left: 25%;
+    padding-left: 30%;
 }
 .links li {
-    height: 35px;
-    width: 35px;
+    height: 25px;
+    /*width: 35px;*/
     display: inline-block;
-    margin-top: 1%;
+    /*margin-top: 1%;*/
     margin-right: 5%; 
 }
 .links li:active, .links li:hover {
-    height: 37.5px;
-    width: 37.5px;
+    height: 30px;
+    width: 30px;
 }
 .vert-nav {
     width: 99%;
     margin-top: 20%;
     text-align: center;
-    font-size: 40px;
+    font-size: 25px;
+    display: none;
     /* margin-left: 20%; */
 }
 .vert-nav li {
@@ -100,16 +107,20 @@ ul {
 }
 .vert-nav li:hover {
     cursor: pointer;
+    text-decoration: underline;
 }
 .vert-nav li div {
     width: 75%;
-    background-color: #D73167;
+    margin: 0 auto;
+    /*background-color: #D73167;*/
+    /*background-color: #3D3333;*/
 }
 /*content: projects, about me, photos, etc*/
 #HOME, #PROJECTS, #BIO, #INTERESTS, #GAMES {
     height: 100vh;
-    width: 78vw;
+    width: 80vw;
     /* border: 1px solid green; */
+    display: none;
     float: right;
 }
 .HOME-box {
@@ -130,7 +141,11 @@ ul {
 .button h1 {
     margin: 5% auto;
 }
+#PROJECTS {
+    background-color: white;
+}
 #PROJECTS .button {
+    background-color: #3D3333;
     width: 15%;
 }
 .project-container {
@@ -146,10 +161,10 @@ ul {
 .project-row {
     height: 22%;
     width: 100%;
-    color: white;
+    /*color: white;*/
     margin: 0 0 2% 0;
-    border: 1px solid white;
-    background-color: #cc1651;
+    border: 1px solid black;
+    /*background-color: #cc1651;*/
     padding-top: 1%;
 }
 .project-icons {
@@ -193,6 +208,7 @@ ul {
     margin-top: 1%;
     margin-bottom: 0;
     font-size: 14px;
+    color: #3D3333;
 }
 #spotify-logo {
     clip-path: circle(42.5% at 52.5% 50%);
@@ -212,7 +228,8 @@ ul {
     width: 90%;
     font-size: 22px;
     color: white;
-    background-color: #cc1651;
+    /*background-color: #cc1651;*/
+    background-color: #1E1A1A;
     border: 1px solid white;
     margin: 1% auto 0 auto;
     padding-left: 5%;

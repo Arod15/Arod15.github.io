@@ -6,20 +6,22 @@
 	<meta name="description" content="My Personal Web Page">
 	<meta name="author" content="Andres Rodriguez">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Andrés Rodríguez's Personal Web Page</title>
+	<title>Andrés José Rodríguez</title>
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	 crossorigin="anonymous"> -->
 	<link rel="stylesheet" href="./style.css" type="text/css">
 	<script src="./script.js"></script>
 </head>
 
-<body onload="main1()">
-	<div id="sidebar" class="hide">
-		<div class="squirtle-box hide">
+<body onload="main()">
+	<div id="sidebar">
+		<div class="squirtle-box">
 			<img src="./assets/squirtle-jumping.gif" alt="squirtle"/>
 		</div>
-		<h2 style="margin: 0 auto 2% auto; text-align: center; display: none;">Andrés José Rodríguez</h2>
-		<div class="links hide">
+		<div class="name">
+			<h3>Andrés José Rodríguez</h3>
+		</div>
+		<div class="links">
 			<ul>
 				<li>
 					<a href="./assets/resume.pdf">
@@ -38,27 +40,27 @@
 				</li>
 			</ul>
 		</div>
-		<div class="vert-nav hide">
+		<div class="vert-nav">
 			<ul>
 				<li onclick="swap('HOME')">
-					<div class="button">HOME</div>
+					<div>HOME</div>
 				</li>
 				<li onclick="swap('PROJECTS')">
-					<div class="button">PROJECTS</div>
+					<div>PROJECTS</div>
 				</li>
 				<li onclick="swap('BIO')">
-					<div class="button">ABOUT ME</div>
+					<div>ABOUT ME</div>
 				</li>
 				<li onclick="swap('INTERESTS')">
-					<div class="button">INTERESTS</div>
+					<div>INTERESTS</div>
 				</li>
 				<li onclick="swap('GAMES')">
-					<div class="button">GAMES</div>
+					<div>GAMES</div>
 				</li>
 			</ul>
 		</div>
 	</div>
-	<div id="HOME" class="hide">
+	<div id="HOME">
 		<div class="HOME-box">
 			<div style="width: 10%; display: inline-block; margin-left: 25%;">
 				<h1>I'm a </h1>
@@ -71,7 +73,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="PROJECTS" class="hide">
+	<div id="PROJECTS">
 		<div class="button">
 			<h1>PROJECTS</h1>
 		</div>
@@ -142,7 +144,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="BIO" class="hide">
+	<div id="BIO">
 		<div style="margin: 1% auto; width: 90%">
 			<!-- <img class="circle" src="./assets/face-trans-cc15651.jpg"/> -->
 			<img class="circle" src="./assets/face-trans-white.jpg" alt="my face" />
@@ -156,7 +158,7 @@
 			<p style="text-indent: 40px; width: 95%;">Enough with the personal stuff! You are most likely here to see my projects and accomplishments, to see of what I am capable. Well, you can find most information about me here or on my Github. Enjoy!</p>
 		</div>
 	</div>
-	<div id="INTERESTS" class="hide">
+	<div id="INTERESTS">
 		<div style="margin: 25% auto 0 auto; height: 100px; width: 200px;">
 			<img src="./assets/squidward-trans.gif"/>
 		</div>
