@@ -12,10 +12,12 @@ html {
 body {
     height: 100vh;
     margin: 0;
-    font-family: Roboto;
+    /*font-family: Roboto;*/
+    font-family: Nunito;
     overflow-y: hidden;
     /*background-color: #D73167;*/
     background-color: #3D3333;
+    color: white;
 }
 img {
     max-width: 100%;
@@ -62,7 +64,7 @@ ul {
     height: 15%;
     width: 99%; 
     /* padding-left: 30%;  */
-    margin: 0 auto 5% auto;
+    margin: 10% auto 5% auto;
     display: none;
 }
 .squirtle-box img {
@@ -73,6 +75,7 @@ ul {
     margin: 0 auto;
     text-align: center;
     display: none;
+    font-weight: normal;
 }
 .links {
     height: 10vh;
@@ -123,26 +126,14 @@ ul {
     display: none;
     float: right;
 }
-.HOME-box {
-    /*height: 14%; */
-    width: 95%; 
-     /*border: 1px solid white;  */
+#HOME div {
+    width: 95%;
     margin: 30% auto 0 auto;
+    /*border: 1px solid red;*/
+    text-align: center;
 }
-.HOME-box h1 {
-    font-size: 40px; 
-    color: white; 
-}
-.HOME-box .button {
-    width: 40%; 
-    display: inline-block;
-}
-
 .button h1 {
     margin: 5% auto;
-}
-#PROJECTS {
-    background-color: white;
 }
 #PROJECTS .button {
     background-color: #3D3333;
@@ -163,7 +154,7 @@ ul {
     width: 100%;
     /*color: white;*/
     margin: 0 0 2% 0;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     /*background-color: #cc1651;*/
     padding-top: 1%;
 }
@@ -208,7 +199,7 @@ ul {
     margin-top: 1%;
     margin-bottom: 0;
     font-size: 14px;
-    color: #3D3333;
+    /*color: #3D3333;*/
 }
 #spotify-logo {
     clip-path: circle(42.5% at 52.5% 50%);
@@ -223,14 +214,13 @@ ul {
     width: 175px;
     margin-left: 41%;
 }
-.BIO-text {
-    height: 62.5%;
-    width: 90%;
-    font-size: 22px;
-    color: white;
-    /*background-color: #cc1651;*/
-    background-color: #1E1A1A;
+#BIO .container {
+    height: 50vh;
+    border: 1px solid red;
+}
+#BIO .lists {
+    height: 100%;
+    width: 33%;
     border: 1px solid white;
-    margin: 1% auto 0 auto;
-    padding-left: 5%;
+    float: left;
 }
