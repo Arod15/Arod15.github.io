@@ -22,7 +22,6 @@ body {
 img {
     max-width: 100%;
     max-height: 100%;
-    /* object-fit: none; */
 }
 a {
     text-decoration: none;
@@ -101,7 +100,7 @@ ul {
     width: 99%;
     margin-top: 20%;
     text-align: center;
-    font-size: 25px;
+    font-size: 2em;
     display: none;
     /* margin-left: 20%; */
 }
@@ -110,6 +109,9 @@ ul {
 }
 .vert-nav li:hover {
     cursor: pointer;
+    text-decoration: underline;
+}
+.vert-nav li.active {
     text-decoration: underline;
 }
 .vert-nav li div {
@@ -138,6 +140,9 @@ ul {
 #PROJECTS .button {
     background-color: #3D3333;
     width: 15%;
+}
+#PROJECTS div h1 {
+    margin-left: 5%;
 }
 .project-container {
     height: 80vh;
@@ -185,10 +190,10 @@ ul {
 .project-text h2 {
     margin: 0 auto;
     display: inline;
-    /* font-size: 20px; */
+     font-size: 1.5em; 
 }
 .date {
-    font-size: 17px;
+    font-size: 1em;
     display: inline-block;
     /*border: 1px solid white;*/
     float: right;
@@ -198,7 +203,7 @@ ul {
 .project-text p {
     margin-top: 1%;
     margin-bottom: 0;
-    font-size: 14px;
+    font-size: 0.8em;
     /*color: #3D3333;*/
 }
 #spotify-logo {
