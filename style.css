@@ -12,7 +12,6 @@ html {
 body {
     height: 100vh;
     margin: 0;
-    /*font-family: Roboto;*/
     font-family: Nunito;
     overflow-y: hidden;
     /*background-color: #D73167;*/
@@ -124,7 +123,7 @@ ul {
 #HOME, #PROJECTS, #BIO, #INTERESTS, #GAMES {
     height: 100vh;
     width: 80vw;
-    /* border: 1px solid green; */
+     /*border: 1px solid green; */
     display: none;
     float: right;
 }
@@ -158,8 +157,8 @@ ul {
     height: 22%;
     width: 100%;
     /*color: white;*/
-    margin: 0 0 2% 0;
-    /*border: 1px solid black;*/
+    margin: 0 0 1% 0;
+    /*border: 1px solid white;*/
     /*background-color: #cc1651;*/
     padding-top: 1%;
 }
@@ -178,7 +177,7 @@ ul {
     max-width: 80%;
     max-height: 80%;
     margin-left: 10%;
-    padding-top: 10%; 
+    padding-top: 5%; 
 }
 .project-text {
     font-family: 'Nunito', sans-serif;
@@ -211,21 +210,29 @@ ul {
 }
 
 /*BIO*/
-#BIO .button {
-    width: 15%;
-}
 #BIO img {
     height: 175px;
     width: 175px;
     margin-left: 41%;
 }
 #BIO .container {
-    height: 50vh;
-    border: 1px solid red;
+    height: 55%;
+    width: 95%;
+    margin: 0 auto;
+    /*border: 1px solid red;*/
 }
 #BIO .lists {
     height: 100%;
     width: 33%;
-    border: 1px solid white;
+    /*border: 1px solid white;*/
+    border-right: 1px solid white;
+    text-align: center;
+    display: inline-block;
     float: left;
+}
+#BIO .lists:last-child {
+    border-right: none;
+}
+#BIO .lists li {
+    font-size: 1.25em;
 }
