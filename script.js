@@ -1,6 +1,6 @@
 function main() {
-	renderSideBar();
-	renderHome();
+	// renderSideBar();
+	// renderHome();
 }
 function renderHome() {
 	setTimeout(function () {unhide('HOME');}, 1000);

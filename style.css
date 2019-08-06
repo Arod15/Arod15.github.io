@@ -5,6 +5,34 @@
 @import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
+/* animations */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes fadein {
+    from {opacity: 0}
+    to {opacity: 1;}
+}
+
+/*
+animation: 1s ease-out 0s 1 slideInFromLeft;
+
+animation-duration: 1s; the duration of the animation 
+animation-timing-function: ease-out; how the animation will behave
+animation-delay: 0s; how long to delay the animation from starting
+animation-iteration-count: 1; how many times the animation will play
+animation-name: slideInFromLeft; the name of the animation we defined above
+*/
+/* other browser stuff */
+::-webkit-scrollbar {
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
 /*html elements*/
 html {
     scroll-behavior: smooth;
@@ -13,7 +41,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Nunito;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     /*background-color: #D73167;*/
     background-color: #3D3333;
     color: white;
@@ -24,7 +52,7 @@ img {
 }
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 ul {
     margin: 0 auto;
@@ -44,26 +72,26 @@ ul {
     background-color: #1E1A1A;
     margin: 1% auto 0 auto;
 }
-/*crappy animations*/
-
 
 /*sidebar, projects*/
 #sidebar {
     height: 100vh;
     /*width: 20vw;*/
-    width: 0;
-    /*background-color: #cc1651;*/
-    /*background-color: #3D3333;*/
+    width: 20vw;
     background-color: #1E1A1A;
     color: white;
     display: inline-block;
+    position: fixed;
+    animation: 1s ease 0s 1 slideInFromLeft;
 }
 .squirtle-box {
     height: 15%;
     width: 99%; 
     /* padding-left: 30%;  */
     margin: 10% auto 5% auto;
-    display: none;
+    /* display: none; */
+    display: inline-block;
+    animation: fadein 1s;
 }
 .squirtle-box img {
     margin-left: 30%;
@@ -72,13 +100,16 @@ ul {
     width: 95%;
     margin: 0 auto;
     text-align: center;
-    display: none;
+    /* display: none; */
+    display: inline-block;
     font-weight: normal;
+    font-size: 1.5em;
 }
 .links {
     height: 10vh;
     width: 99%;
-    display: none;
+    /* display: none; */
+    display: inline-block;
 }
 .links ul {
     height: 100%;
@@ -100,31 +131,38 @@ ul {
     margin-top: 20%;
     text-align: center;
     font-size: 2em;
-    display: none;
+    /* display: none; */
+    display: inline-block;
     /* margin-left: 20%; */
 }
 .vert-nav li {
-    margin-bottom: 10%;
+    margin-bottom: 15%;
 }
-.vert-nav li:hover {
-    cursor: pointer;
-    text-decoration: underline;
+.underlink {
+    display: inline-block;
+    color: white;
+    /* text-decoration: none; */
 }
-.vert-nav li.active {
-    text-decoration: underline;
+.underlink::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
 }
-.vert-nav li div {
-    width: 75%;
-    margin: 0 auto;
-    /*background-color: #D73167;*/
-    /*background-color: #3D3333;*/
+
+.underlink:hover::after {
+    width: 100%;
+    transition: width .3s;
 }
 /*content: projects, about me, photos, etc*/
 #HOME, #PROJECTS, #BIO, #INTERESTS, #GAMES {
     height: 100vh;
-    width: 80vw;
-     /*border: 1px solid green; */
-    display: none;
+    width: 79vw;
+     /* border: 1px solid green; */
+    /* display: none; */
+    display: inline-block;
     float: right;
 }
 #HOME div {
@@ -132,6 +170,7 @@ ul {
     margin: 30% auto 0 auto;
     /*border: 1px solid red;*/
     text-align: center;
+    animation: fadein 2s;
 }
 .button h1 {
     margin: 5% auto;
@@ -145,7 +184,7 @@ ul {
 }
 .project-container {
     height: 80vh;
-    width: 95%;
+    width: 90%;
     margin: 1% auto 0 auto;
     /* border: 1px solid red; */
 }
@@ -157,11 +196,15 @@ ul {
     height: 22%;
     width: 100%;
     /*color: white;*/
-    margin: 0 0 1% 0;
-    /*border: 1px solid white;*/
-    /*background-color: #cc1651;*/
+    margin: 0 0 3% 0;
+    border: 1px solid white;
+    background-color: #1E1A1A;
     padding-top: 1%;
+    transition: width 1s;
 }
+/* .project-row:hover {
+    width: 100%;
+} */
 .project-icons {
     height: 100%;
     width: 15%;;
