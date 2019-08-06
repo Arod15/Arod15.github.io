@@ -236,3 +236,9 @@ ul {
 #BIO .lists li {
     font-size: 1.25em;
 }
+.interests {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}

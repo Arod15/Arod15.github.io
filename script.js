@@ -6,17 +6,8 @@ function renderHome() {
 	setTimeout(function () {unhide('HOME');}, 1000);
 	let button = document.getElementById('home_button');
 	// console.log(button);
-	rotateHomeButton(button);
 }
-function rotateHomeButton(button) {
-	let arr = ["PROGRAMMER", "GAMER", "STUDENT", "AMATEUR ARTIST", "HISPANIC"];
-	for (i = 0; i < arr.length; i++) {
-		console.log(arr[i]);
-		let res = `<h1>${arr[i]}</h1>`;
-		setTimeout(function() {button.innerHTML = res;}, 100);
-		console.log(button.innerHTML);
-	}
-}
+
 function renderSideBar() {
 	let sideBar = document.getElementById("sidebar");
 	unhide('sidebar');
