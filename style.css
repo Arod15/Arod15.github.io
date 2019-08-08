@@ -55,7 +55,7 @@ body {
     color: white;
 }
 img {
-    max-width: 100%;
+    max-width: 150%;
     max-height: 100%;
 }
 a {
@@ -307,13 +307,13 @@ ul {
 /* INTERESTS */
 .interests-container {
     /* background-color: red; */
-    height: 85%;
-    width: 70%;
+    height: 50%;
+    width: 50%;
     margin: 0 auto;
     /* display: inline-block; */
 }
 .interests-container div:not(.interest) {
-    height: 20%;
+    height: 25%;
     width: 100%;
     /* border: 1px solid white; */
 }
@@ -324,6 +324,12 @@ ul {
     display: inline-block;
     border: 1px solid red;
     float: left;
-    clip-path: circle(45% at 43% 50%);
+    clip-path: circle(40% at 61% 50%);
     /* clip-path: circle(50% at 50% 50%); */
+}
+.interest img {
+    max-height: 110%;
+    max-width: 150%;
+    margin-top: 5%;
+    margin-left: 1%;
 }
