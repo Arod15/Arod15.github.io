@@ -22,6 +22,14 @@
         transform: translateX(0);
     }
 }
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
 @keyframes fadein {
     from {opacity: 0}
     to {opacity: 1;}
@@ -92,18 +100,6 @@ ul {
     position: fixed;
     animation: 1s ease 0s 1 slideInFromLeft;
 }
-.squirtle-box {
-    height: 15%;
-    width: 99%; 
-    /* padding-left: 30%;  */
-    margin: 10% auto 5% auto;
-    /* display: none; */
-    display: inline-block;
-    animation: fadein 1s;
-}
-.squirtle-box img {
-    margin-left: 30%;
-}
 .name {
     height: 8%;
     width: 90%;
@@ -117,6 +113,19 @@ ul {
 }
 .name p {
     margin:  1% 0 0 0;
+}
+.vert-nav {
+    width: 99%;
+    margin-top: 20%;
+    margin-bottom: 150%;
+    text-align: center;
+    font-size: 2em;
+    /* display: none; */
+    display: inline-block;
+    /* margin-left: 20%; */
+}
+.vert-nav li {
+    margin-bottom: 15%;
 }
 .links {
     height: 10vh;
@@ -138,19 +147,6 @@ ul {
 .links li:active, .links li:hover {
     height: 30px;
     width: 30px;
-}
-.vert-nav {
-    width: 99%;
-    margin-top: 20%;
-    margin-bottom: 150%;
-    text-align: center;
-    font-size: 2em;
-    /* display: none; */
-    display: inline-block;
-    /* margin-left: 20%; */
-}
-.vert-nav li {
-    margin-bottom: 15%;
 }
 .underlink {
     display: inline-block;
@@ -344,3 +340,55 @@ ul {
     /* margin-top: 15%; */
     /* margin-left: 0%; */
 }
+
+/* mobile version */
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #sidebar {
+        height: 20vh;
+        width: 100vw;
+        /* margin-bottom: 20vh; */
+        animation: 1s ease 0s 1 slideInFromTop;
+    }
+    .name {
+        height: 50%;
+        width: 15%;
+        background-color: #1E1A1A;
+        float: left;
+        text-align: center;
+        font-size: 2em;
+        border: none;
+        margin: 15% 5% 0 5%;
+        display: inline-block;
+    }
+    .vert-nav {
+        height: 100%;
+        width: 60%;
+        margin: 0;
+        display: inline-block;
+        /* border: 1px solid white; */
+        float: left;
+    }
+    .vert-nav li {
+        display: inline-block;
+        margin-bottom: 5%;
+        /* float: left; */
+    }
+    .links {
+        height: 30%;
+        width: 10%;
+        /* border: 1px solid white; */
+        margin-right: 2%;
+        padding-top: 10%;
+    }
+    .links li {
+        margin-left: 0;
+        /* margin-bottom: 10%; */
+    }
+    #HOME, #PROJECTS, #BIO {
+        margin-top: 25vh;
+    }
+    #PROJECTS {
+        height: 500vh;
+    }
+  }
