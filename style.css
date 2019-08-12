@@ -391,8 +391,24 @@ ul {
     }
     #HOME, #PROJECTS, #BIO {
         margin-top: 25vh;
+        margin-left: 0;
     }
     #PROJECTS {
         height: 500vh;
+    }
+    .project-container {
+        height: 100%;
+    }
+    .project-row {
+        height: 60vh;
+        border: 1px solid red;
+    }
+    .project-icons {
+        height: 50%;
+        display: block;
+        float: left;
+    }
+    .project-text {
+        font-size: .5em;
     }
   }
