@@ -344,6 +344,9 @@ ul {
 /* mobile version */
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
+    html {
+        overflow-x: hidden;
+    }
     #sidebar {
         height: 20vh;
         width: 100vw;
@@ -358,7 +361,7 @@ ul {
         text-align: center;
         font-size: 2em;
         border: none;
-        margin: 15% 5% 0 5%;
+        margin: 5% 5% 0 5%;
         display: inline-block;
     }
     .vert-nav {
@@ -372,6 +375,7 @@ ul {
     .vert-nav li {
         display: inline-block;
         margin-bottom: 5%;
+        font-size: .5em;
         /* float: left; */
     }
     .links {
