@@ -254,6 +254,9 @@ ul {
     float: left;
     transition: width 1s;
 }
+.project-description span {
+    font-size: 0.6em;
+}
 .project-description h2 {
     margin: 0 auto;
     display: inline;
@@ -265,20 +268,27 @@ ul {
     font-size: 1em;
     /*color: #3D3333;*/
 }
-.date {
+.learn-more {
+    height: 25%;
+    width: 15%;
+    background-color: #1E1A1A;
     font-size: 1em;
     display: inline-block;
-    /*border: 1px solid white;*/
+    border: 1px solid white;
     float: right;
-    margin-top: 2%;
+    margin-top: 5%;
     margin-right: 2%;
+}
+.learn-more h3 {
+    text-align: center;
+    margin: 5% 0 0 0;
 }
 
 /*BIO*/
 #BIO .face {
     height: 175px;
     width: 175px;
-    margin-left: 42%;
+    /* margin-left: 42%; */
 }
 #BIO > div:not(.container) {
     margin: 0 auto; 
@@ -289,7 +299,7 @@ ul {
 #BIO .container {
     height: 55%;
     width: 95%;
-    margin: 0 auto;
+    margin: 2% auto 0 auto;
     /*border: 1px solid red;*/
 }
 #BIO .lists {
@@ -304,6 +314,9 @@ ul {
 #BIO .lists:last-child {
     border-right: none;
 }
+#BIO .lists h2 {
+    margin-top: 0;
+}
 #BIO .lists li {
     text-align: left;
     margin-left: 15%;
@@ -312,14 +325,42 @@ ul {
 }
 #BIO .lists:last-child li {
     margin-bottom: 2%;
+    list-style: none;
+}
+.well::before {
+    color: green;  
+    /* color of bullet or square */
+
+    content: "\2022"; 
+    /* Unicode of character to precede the list item */
+
+    display: inline-block;
+}
+.ok::before {
+    color: yellow;  
+    /* color of bullet or square */
+
+    content: "\2022"; 
+    /* Unicode of character to precede the list item */
+
+    display: inline-block;
+}
+.shrug::before {
+    color: red;  
+    /* color of bullet or square */
+
+    content: "\2022"; 
+    /* Unicode of character to precede the list item */
+
+    display: inline-block;
 }
 /* INTERESTS */
 .interests-container {
     /* height: 60%;
     width: 75%; */
     margin-top: 25%;
-    height: 50%;
-    width: 50%;
+    height: 80%;
+    width: 80%;
     margin: 0 auto;
     /* border: 1px solid white; */
     /* display: inline-block; */
@@ -332,13 +373,13 @@ ul {
 }
 .interest {
     height: 100%;
-    width: 25%;
+    width: 23%;
     /* background-color: red; */
     display: inline-block;
-    /* border: 1px solid red; */
+    border: 1px solid white;
     float: left;
     margin: 0 0%;
-    clip-path: circle(40% at 50% 50%);
+    /* clip-path: circle(40% at 50% 50%); */
 }
 .interest img {
     /* max-height: 100%;  */
@@ -359,6 +400,7 @@ ul {
         width: 100vw;
         /* margin-bottom: 20vh; */
         animation: 1s ease 0s 1 slideInFromTop;
+        z-index: 5;
     }
     .name {
         height: 50%;
@@ -465,5 +507,12 @@ ul {
         text-align: center;
         /* border: 1px solid red; */
         margin: 0;
+    }
+    .container {
+        border: 1px solid white;
+    }
+    .lists {
+        width: 100%;
+        display: block;
     }
   }

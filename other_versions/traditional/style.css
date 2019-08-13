@@ -78,8 +78,9 @@ ul {
 .banner {
     height: 100vh;
     width: 100%;
+    background-image: url('../../assets/venice.jpg');
     /* background-image: url('https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Ff.vividscreen.info%2Fsoft%2F16ea3ca51ac3031391e6c7743ca58235%2FOnePlus-One-1920x1200.jpg&f=1'); */
-    background-image: url('../../assets/op1.png');
+    /* background-image: url('../../assets/op1.png'); */
     background-size: 100% 100%;
     position: relative;
 }
