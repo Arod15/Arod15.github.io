@@ -173,6 +173,7 @@ ul {
      /* border: 1px solid green; */
     /* display: none; */
     display: inline-block;
+    /* margin: 0; */
     float: right;
 }
 #HOME div {
@@ -278,6 +279,12 @@ ul {
     height: 175px;
     width: 175px;
     margin-left: 42%;
+}
+#BIO > div:not(.container) {
+    margin: 0 auto; 
+    font-size: 1.5em; 
+    width: 25%; 
+    text-align: center;
 }
 #BIO .container {
     height: 55%;
@@ -390,25 +397,73 @@ ul {
         /* margin-bottom: 10%; */
     }
     #HOME, #PROJECTS, #BIO {
-        margin-top: 25vh;
+        /* margin-top: 40vh; */
         margin-left: 0;
+        /* border: 1px solid white; */
+        width: 100%;
+    }
+    #HOME {
+        height: 60vh;
+        margin-top: 40vh;
+        /* border: 1px solid white; */
     }
     #PROJECTS {
-        height: 500vh;
+        height: 250vh;
+        border: 1px solid white;
     }
     .project-container {
+        margin-top: 10%;
         height: 100%;
+        width: 95%;
     }
     .project-row {
-        height: 60vh;
-        border: 1px solid red;
+        height: 50vh;
+        margin-bottom: 20%;
+        /* border: 1px solid red; */
     }
     .project-icons {
-        height: 50%;
-        display: block;
-        float: left;
+        height: 20%;
+        width: 30%;
+        margin-left: 35%;
+        margin-bottom: 2%;
+        display: inline-block;
+        /* float: left; */
     }
     .project-text {
+        height: 70%;
+        width: 100%;
         font-size: .5em;
+        margin: 0;
+        /* border: 1px solid white; */
+    }
+    .project-description {
+        height: auto;
+        width: 100%;
+        margin: 0;
+        font-size: 2em;
+        display: block;
+        /* border: 1px solid red; */
+    }
+    .date {
+        height: 10%;
+        /* border: 1px solid white; */
+        font-size: 2em;
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-top: 0%;
+        margin-right: 0;
+        padding: 0;
+    }
+    #BIO .face {
+        margin-left: 0%;
+    }
+    #BIO > div:not(.container):not(.face) {
+        font-size: 1em;
+        /* height: 100%; */
+        width: 100%;
+        text-align: center;
+        /* border: 1px solid red; */
+        margin: 0;
     }
   }
