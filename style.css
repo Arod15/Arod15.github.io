@@ -167,16 +167,16 @@ ul {
     transition: width .3s;
 }
 /*content: projects, about me, photos, etc*/
-#HOME, #PROJECTS, #BIO, #INTERESTS, #GAMES {
+#home, #projects, #bio, #games {
     height: 100vh;
-    width: 85vw;
+    width: 83.5vw;
      /* border: 1px solid green; */
     /* display: none; */
     display: inline-block;
     /* margin: 0; */
     float: right;
 }
-#HOME div {
+#home div {
     width: 95%;
     margin: 30% auto 0 auto;
     /*border: 1px solid red;*/
@@ -186,11 +186,11 @@ ul {
 .button h1 {
     margin: 5% auto;
 }
-#PROJECTS .button {
+#projects .button {
     background-color: #3D3333;
     width: 15%;
 }
-#PROJECTS div h1 {
+#projects div h1 {
     margin-left: 5%;
 }
 .project-container {
@@ -285,24 +285,24 @@ ul {
 }
 
 /*BIO*/
-#BIO .face {
+#bio .face {
     height: 175px;
     width: 175px;
     /* margin-left: 42%; */
 }
-#BIO > div:not(.container) {
+#bio > div:not(.container) {
     margin: 0 auto; 
     font-size: 1.5em; 
     width: 25%; 
     text-align: center;
 }
-#BIO .container {
+#bio .container {
     height: 55%;
     width: 95%;
     margin: 2% auto 0 auto;
     /*border: 1px solid red;*/
 }
-#BIO .lists {
+#bio .lists {
     height: 100%;
     width: 33%;
     /*border: 1px solid white;*/
@@ -311,19 +311,24 @@ ul {
     display: inline-block;
     float: left;
 }
-#BIO .lists:last-child {
+#bio .lists:first-child li::before {
+    color: white;
+    content: "\2022";
+    display: inline-block;
+}
+#bio .lists:last-child {
     border-right: none;
 }
-#BIO .lists h2 {
+#bio .lists h2 {
     margin-top: 0;
 }
-#BIO .lists li {
+#bio .lists li {
     text-align: left;
     margin-left: 15%;
     margin-bottom: 4%;
     font-size: 1.25em;
 }
-#BIO .lists:last-child li {
+#bio .lists:last-child li {
     margin-bottom: 2%;
     list-style: none;
 }
@@ -376,7 +381,7 @@ ul {
     width: 23%;
     /* background-color: red; */
     display: inline-block;
-    border: 1px solid white;
+    border: 3px solid #1E1A1A;
     float: left;
     margin: 0 0%;
     /* clip-path: circle(40% at 50% 50%); */
@@ -388,7 +393,48 @@ ul {
     /* margin-top: 15%; */
     /* margin-left: 0%; */
 }
+#bio #color-bar {
+    width: 100%;
+}
+#bio #color-bar li {
+    font-size: 1em;
+    display: inline-block;
+    margin: 0;
+    /* float: left; */
+}
+#games {
+    /* border: 1px solid red; */
+}
+#games div {
+    width: 40%;
+    margin-left: 7%;
+    font-size: 1.5em;
+    display: inline-block;
+    border: 1px solid white;
+    float: left;
+}
+#games table {
+    border-spacing: 10px;
+}
+#games th {
+    background-color: #1E1A1A;
+}
+#games th, #games td {
+    border: 1px solid white;
+}
+#games tr td:last-child {
+    text-align: center;
+}
+#games input [type="text"] {
 
+}
+#games input[type="submit"] {
+    color: white;
+    background-color: #1E1A1A;
+    font-size: 1.5em;
+    height: 50%;
+    width: 70%;
+}
 /* mobile version */
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
@@ -438,18 +484,18 @@ ul {
         margin-left: 0;
         /* margin-bottom: 10%; */
     }
-    #HOME, #PROJECTS, #BIO {
+    #home, #projects, #bio {
         /* margin-top: 40vh; */
         margin-left: 0;
         /* border: 1px solid white; */
         width: 100%;
     }
-    #HOME {
+    #home {
         height: 60vh;
         margin-top: 40vh;
         /* border: 1px solid white; */
     }
-    #PROJECTS {
+    #projects {
         height: 250vh;
         border: 1px solid white;
     }
@@ -497,10 +543,10 @@ ul {
         margin-right: 0;
         padding: 0;
     }
-    #BIO .face {
+    #bio .face {
         margin-left: 0%;
     }
-    #BIO > div:not(.container):not(.face) {
+    #bio > div:not(.container):not(.face) {
         font-size: 1em;
         /* height: 100%; */
         width: 100%;
