@@ -6,18 +6,23 @@ img {
     height: auto;
     width: 100%;
 }
-.about-me-row {
-    /* background-color: blue; */
-    /* height: 20vh; */
+.banner-section {
+    height: 80vh;
+    background-color: #072083;
+}
+nav.navbar {
+    color: red;
+}
+.vert-centering-ctn {
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.about-me-row > div {
-    /* border: 1px solid red; */
-}
-#face-container {
-
+.about-me-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #face-container > img {
     max-height: 100%;
@@ -28,11 +33,13 @@ img {
 }
 #about-card {
     height: 100%;
+    color: black;
+    background-color: #8BA4CC;
 }
 .circle {
-    background-color: #8BA4CC;
+    background-color: white;
     border-radius: 50%;
-    border: 3px solid #8BA4CC;
+    /* border: 3px solid #F1F2F6; */
 }
 /* #face-container {
     height: 60%;
@@ -51,6 +58,7 @@ img.card-img-top {
 }
 div.card {
     height: 20em;
+    background-color: #8BA4CC;
     /* width: 20rem; */
 }
 div.card-body {

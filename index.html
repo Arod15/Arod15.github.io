@@ -14,52 +14,58 @@
         
         <link rel="stylesheet" href="./style.css" type="text/css">
     </head>
-    <style>
-    </style>
     <body>
-        <nav class="navbar  navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">AJR</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav" >
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Projects</a>
-                </li>
-                <li class="nav-item" >
-                  <a class="nav-link" href="#">Photos</a>
-                </li>
-              </ul>
-            </div>
-        </nav>
-
-        <div class="container">
-            <div class="row">
-                <h1 class="display-4">About Me</h1>
-            </div>
-            <div class="row about-me-row">
-                <div class="col-3">
-                    <div id="face-container">
-                        <img src="./assets/face-trans.png" alt="My Face" class="circle">
-                    </div>
+        <div class="banner-section">
+            <nav class="navbar  navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">AJR</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav" >
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#ABOUT-ME">About </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#PROJECTS">Projects</a>
+                    </li>
+                    <li class="nav-item" >
+                      <a class="nav-link" href="#PHOTOS">Photos</a>
+                    </li>
+                  </ul>
                 </div>
-                <div class="col-8">
-                    <div class="card" id="about-card">
-                        <div class="card-body">
-                            <p style="font-size: 2em;">Hey. I'm Andrés Rodríguez, a recent computer science grad looking to add my footprint to the software world, one small project at a time.</p>
+            </nav>
+    
+            <div class="vert-centering-ctn">
+                <div class="container">
+                    <div class="row about-me-row">
+                        <div class="col-3">
+                            <div id="face-container">
+                                <img src="./assets/face-trans.png" alt="My Face" class="circle">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="card" id="about-card">
+                                <div class="card-body">
+                                    <p style="font-size: 2em;">Hey. I'm Andrés Rodríguez, a recent computer science grad looking to add my footprint to the software world, one small project at a time.</p>
+                                </div>
+                            </div>
+                            <!-- <p style="font-size: 2em;">Hey. I'm Andrés Rodríguez, a recent computer science grad looking to add my footprint to the software world, one small project at a time.</p> -->
                         </div>
                     </div>
-                    <!-- <p style="font-size: 2em;">Hey. I'm Andrés Rodríguez, a recent computer science grad looking to add my footprint to the software world, one small project at a time.</p> -->
                 </div>
             </div>
-
+        </div>
+        
+        <div class="container">
             <div class="row">
                 <div class="col-4">
-                    <h1 class="display-4">Projects</h1>
+                    <h1 class="display-4" id="#ABOUT-ME">About Me</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <h1 class="display-4" id="#PROJECTS">Projects</h1>
                 </div>
             </div>
             <div class="row">
@@ -123,6 +129,7 @@
                     </div>
                 </div>
             </div>
+            <div class="row"></div>
         </div>
     </body>
 </html>
