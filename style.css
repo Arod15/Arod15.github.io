@@ -1,5 +1,6 @@
 body {
     background-color: #F1F2F6;
+    color: #3D4859;
     /* background-color: #8BA4CC; */
 }
 img {
@@ -7,11 +8,15 @@ img {
     width: 100%;
 }
 .banner-section {
-    height: 80vh;
-    background-color: #072083;
+    height: 90vh;
+    /* background-color: #072083; */
+    background-color: #3D629F;
 }
 nav.navbar {
     color: red;
+}
+h1 {
+    /* text-decoration: underline #F85B1A; */
 }
 .vert-centering-ctn {
     height: 70vh;
@@ -46,6 +51,25 @@ nav.navbar {
     width: 60%;
     margin: 0 auto;
 } */
+.about-me-icons, .about-me-descriptions {
+    /* border: 1px solid red; */
+}
+.about-me-descriptions > ul {
+    padding-left: 0;
+}
+.about-me-descriptions li {
+    font-size: 1.4em;
+    margin: 0;
+    /* padding: 36px 0 36px 90px; */
+    padding: 0% 5% 0% 5%;
+	list-style: none;
+	background-image: url("./assets/whis-logo.png");
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 20px;
+    /* list-style-image: url('./assets/whis-logo.png'); */
+}
+
 div.icon-container {
     height: 5em; 
     width: 25%;
@@ -58,7 +82,7 @@ img.card-img-top {
 }
 div.card {
     height: 20em;
-    background-color: #8BA4CC;
+    background-color: white
     /* width: 20rem; */
 }
 div.card-body {
