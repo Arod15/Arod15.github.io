@@ -8,18 +8,12 @@ img {
     width: 100%;
 }
 .banner-section {
-    height: 90vh;
+    /* height: 80vh; */
     /* background-color: #072083; */
-    background-color: #3D629F;
-}
-nav.navbar {
-    color: red;
-}
-h1 {
-    /* text-decoration: underline #F85B1A; */
+    /* background-color: #3D629F; */
 }
 .vert-centering-ctn {
-    height: 70vh;
+    /* height: 40vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,28 +23,38 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-#face-container > img {
+#face {
+    background-color: #A2D7D5;
+}
+/* #face-container > img {
     max-height: 100%;
     max-width: auto;
-    /* width: auto; */
+    background-color: #8BA4CC;
     margin: 0 auto;
-
+} */
+.img-container > img {
+    max-height: 100%;
+    max-width: auto;
+    margin: 0 auto;
 }
 #about-card {
     height: 100%;
     color: black;
-    background-color: #8BA4CC;
+    background-color: white;
 }
 .circle {
     background-color: white;
-    border-radius: 50%;
-    /* border: 3px solid #F1F2F6; */
+    border-radius: 100%;
+    border: 3px solid #3D4859;
 }
 /* #face-container {
     height: 60%;
     width: 60%;
     margin: 0 auto;
 } */
+#about-me-row {
+    margin-top: 2%;
+}
 .about-me-icons, .about-me-descriptions {
     /* border: 1px solid red; */
 }
@@ -73,16 +77,15 @@ h1 {
 div.icon-container {
     height: 5em; 
     width: 25%;
-    margin: 0 auto;
+    margin: 3% auto;
 }
 img.card-img-top {
     height: 100%;
     width: 100%;
-    margin: 0 auto;
 }
 div.card {
-    height: 20em;
-    background-color: white
+    /* height: 21em; */
+    background-color: white;
     /* width: 20rem; */
 }
 div.card-body {
@@ -91,8 +94,8 @@ div.card-body {
 .learn-more-btn {
     display: inline-block;
     margin: 0 auto;
-    position:absolute;
-    bottom:5%;
+    /* position:absolute;
+    bottom:5%; */
     color: black;
     background-color: #A2D7D5;
 }

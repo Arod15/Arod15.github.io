@@ -15,42 +15,33 @@
         <link rel="stylesheet" href="./style.css" type="text/css">
     </head>
     <body>
-        <div class="banner-section">
-            <nav class="navbar  navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="#">AJR</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav" >
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#ABOUT-ME">About </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#PROJECTS">Projects</a>
-                    </li>
-                    <li class="nav-item" >
-                      <a class="nav-link" href="#PHOTOS">Photos</a>
-                    </li>
-                  </ul>
+        <nav class="navbar  navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">AJR</a>
+            <div class="container-fluid" id="navbarNav"></div>
+            <ul class="navbar-nav navbar-right" >
+                <li class="nav-item">
+                    <a class="nav-link" href="#ABOUT-ME">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#PROJECTS">Projects</a>
+                </li>
+                <li class="nav-item" >
+                    <a class="nav-link" href="#PHOTOS">Photos</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container vert-centering-ctn">
+            <div class="row about-me-row">
+                <div class="col-2">
+                    <div  class="img-container">
+                        <img src="./assets/face-trans.png" alt="My Face" class="circle" id="face">
+                    </div>
                 </div>
-            </nav>
-    
-            <div class="vert-centering-ctn">
-                <div class="container">
-                    <div class="row about-me-row">
-                        <div class="col-3">
-                            <div id="face-container">
-                                <img src="./assets/face-trans.png" alt="My Face" class="circle">
-                            </div>
-                        </div>
-                        <div class="col-8">
-                            <div class="card" id="about-card">
-                                <div class="card-body">
-                                    <p style="font-size: 2em;">Hey. I'm Andrés Rodríguez, a recent computer science grad looking to add my footprint to the software world, one small project at a time.</p>
-                                </div>
-                            </div>
-                            <!-- <p style="font-size: 2em;">Hey. I'm Andrés Rodríguez, a recent computer science grad looking to add my footprint to the software world, one small project at a time.</p> -->
+                <div class="col-10">
+                    <div class="card" id="about-card">
+                        <div class="card-body">
+                            <p style="font-size: 1.5em;">Hey. I'm Andrés Rodríguez, a recent computer science grad looking to add my footprint to the software world, one small project at a time.</p>
                         </div>
                     </div>
                 </div>
@@ -58,12 +49,12 @@
         </div>
         
         <div class="container">
-            <div class="row">
+            <!-- <div class="row" id="about-me-row">
                 <div class="col-4">
-                    <h1 class="display-4" id="#ABOUT-ME">About Me</h1>
+                    <h2 class="display-4" id="ABOUT-ME">About Me</h2>
                 </div>
             </div>
-            <div class="row">
+            <div class="row card">
                 <div class="col-1">
                     <div class="about-me-icons">
                         <img src="./assets/bu-logo.png" alt="BU Logo">
@@ -87,80 +78,108 @@
                 </div>
                 <div class="col-8 about-me-descriptions">
                     <ul>
-                        <li>Incoming TechStart employee at Liberty Mutual Insurance.</li>
+                        <li>Incoming Technology Associate at Liberty Mutual Insurance.</li>
                     </ul>
                 </div>
                 <div class="col-2">
                     <p>Starting Sep '20</p>
                 </div>
-            </div>
+            </div> -->
             <div class="row">
-                <div class="col-4">
-                    <h1 class="display-4" id="#PROJECTS">Projects</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-4">
-                    <div class="card" >
-                        <div class="icon-container">
-                            <img src="./assets/career-cabin-icon.png" class="card-img-top" alt="CareerCabin Logo">
+                <div class="col-6">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4">
+                                <h1 id="PROJECTS">Projects</h1>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">CareerCabin</h5>
-                            <p class="card-text">Resume-sharing web app to streamline resume info exchange between recruiters and students at job fairs. </p>
-                            <!-- <p class="card-text">Technologies: React, Django, Python, JavaScript, AWS</p> -->
-                            <p class="card-text">Date: April 2020</p>
-                            <a href="#" class="btn btn-primary learn-more-btn">Learn More</a>
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="img-container">
+                                    <img src="./assets/career-cabin-icon.png" class="circle" alt="Career Cabin Icon">
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">CareerCabin <small class="text-muted">April 2020</small></h5>
+                                        <p class="card-text">Resume-sharing web app to streamline resume info exchange between recruiters and students at job fairs. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="img-container">
+                                    <img src="./assets/switch_scraper_logo_clean.png" class="circle" alt="Switch Scraper Logo">
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Switch Scraper <small class="text-muted">January 2019</small></h5>
+                                        <p class="card-text">Web app which alerts your phone of recent Nintendo Switch deals based on specified criteria.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="img-container">
+                                    <img src="./assets/JRBB_logo.png" class="circle" alt="JRBB Logo">
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">HappyTweet <small class="text-muted">March 2017</small></h5>
+                                        <p class="card-text">Web app to calculate sentiment analysis of group of tweets based on location.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="img-container">
+                                    <img src="./assets/reddit-snoo.png" class="circle" alt="Reddit Snoo">
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">/r/NBA Reddit Opinion Bot <small class="text-muted">September 2018</small></h5>
+                                        <p class="card-text">Python program that graphs the sentiment analysis of an NBA player based on r/NBA comments.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="card" >
-                        <div class="icon-container">
-                            <img src="./assets/switch_scraper_logo_clean.png" class="card-img-top" alt="Switch Scraper Logo">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Switch Scraper</h5>
-                            <p class="card-text">Web app which alerts your phone of recent Nintendo Switch deals based on specified criteria.</p>
-                            <!-- <p class="card-text">Technologies: Python, Flask, MongoDB, HTML/CSS</p> -->
-                            <p class="card-text">Date: January 2019</p>
-                            <a href="#" class="btn btn-primary learn-more-btn">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" >
-                        <div class="icon-container">
-                            <img src="./assets/reddit-snoo.png" class="card-img-top" alt="Reddit Snoo">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">/r/NBA Reddit Opinion Bot</h5>
-                            <p class="card-text">Python program that graphs the sentiment analysis of an NBA player based on r/NBA comments.</p>
-                            <!-- <p class="card-text">Technologies: Python, Flask, MongoDB, HTML/CSS</p> -->
-                            <p class="card-text">Date: September 2018</p>
-                            <a href="#" class="btn btn-primary learn-more-btn">Learn More</a>
+                <div class="col-6">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4">
+                                <h1 id="PHOTOS">Photos</h1>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="./assets/florence.png" alt="">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="./assets/spain-got.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img src="./assets/montserrat.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-    
-            <div class="row">
-                <div class="col-4 justify-content-center">
-                    <div class="card">
-                        <div class="icon-container">
-                            <img src="./assets/JRBB_logo.png" class="card-img-top" alt="JRBB Logo">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">HappyTweet</h5>
-                            <p class="card-text">Web app to calculate sentiment analysis of group of tweets based on location.</p>
-                            <!-- <p class="card-text">Technologies: ReactJS, Flask, Python, Indico API (Emotion Detection), MongoDB, HTML/CSS/JS</p> -->
-                            <p class="card-text">Date: March 2017</p>
-                            <a href="#" class="btn btn-primary learn-more-btn">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row"></div>
+            </div>    
         </div>
     </body>
 </html>
