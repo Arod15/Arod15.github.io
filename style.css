@@ -45,7 +45,7 @@ img {
 .circle {
     background-color: white;
     border-radius: 100%;
-    border: 3px solid #3D4859;
+    border: 1px solid #3D4859;
 }
 /* #face-container {
     height: 60%;
