@@ -65,6 +65,10 @@ div.card-body {
 #projects-section .card-text {
     font-size: 1.5em;
 }
+#projects-section .img-container {
+    height: 75%;
+    width: 75%;
+}
 #cc-logo {
     border: 1px solid #3D629F;
 }
