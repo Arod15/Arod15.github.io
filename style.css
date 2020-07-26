@@ -74,8 +74,14 @@ div.card-body {
 
 /* mobile-specific class changes */
 @media (max-width: 480px) {
-    .col-5 {
+    #projects-section .col-5 {
         margin: 7% auto;
+    }
+    .vert-centering-ctn {
+        text-align: center;
+    }
+    .vert-centering-ctn .col-6 {
+        margin-top: 5%;
     }
 
 }
