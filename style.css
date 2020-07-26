@@ -1,3 +1,4 @@
+/* general classes */
 body {
     background-color: #F1F2F6;
     color: #3D4859;
@@ -7,8 +8,20 @@ img {
     height: auto;
     width: 100%;
 }
+.circle {
+    background-color: white;
+    border-radius: 100%;
+}
+.img-container > img {
+    max-height: 100%;
+    max-width: auto;
+    margin: 0 auto;
+}
+/* actual classes */
 .banner-section {
     background-color: #3D629F;
+    margin-bottom: 1%;
+    /* background-color: rgb(10, 25, 47); */
     /* background-color: #546C91; */
 }
 .vert-centering-ctn {
@@ -25,62 +38,10 @@ img {
 #face {
     background-color: #97B2DE;
 }
-/* #face-container > img {
-    max-height: 100%;
-    max-width: auto;
-    background-color: #8BA4CC;
-    margin: 0 auto;
-} */
-.img-container > img {
-    max-height: 100%;
-    max-width: auto;
-    margin: 0 auto;
-}
 #about-card {
     height: 100%;
-    color: black;
-    background-color: white;
-}
-.circle {
-    background-color: white;
-    border-radius: 100%;
-    /* border: 1px solid #3D4859; */
-}
-/* #face-container {
-    height: 60%;
-    width: 60%;
-    margin: 0 auto;
-} */
-#about-me-row {
-    margin-top: 2%;
-}
-.about-me-icons, .about-me-descriptions {
-    /* border: 1px solid red; */
-}
-/* .about-me-descriptions > ul {
-    padding-left: 0;
-}
-.about-me-descriptions li {
-    font-size: 1.4em;
-    margin: 0;
-    padding: 0% 5% 0% 5%;
-	list-style: none;
-	background-image: url("./assets/whis-logo.png");
-	background-repeat: no-repeat;
-	background-position: left;
-	background-size: 20px;
-} */
-.content {
-    margin-top: 2%;
-}
-div.icon-container {
-    height: 5em; 
-    width: 25%;
-    margin: 3% auto;
-}
-img.card-img-top {
-    height: 100%;
-    width: 100%;
+    color: white;
+    /* background-color: white; */
 }
 div.card {
     /* height: 21em; */
@@ -88,21 +49,22 @@ div.card {
     /* width: 20rem; */
 }
 div.card-body {
+    padding-top: 0;
     position: relative;
-}
-.learn-more-btn {
-    display: inline-block;
-    margin: 0 auto;
-    /* position:absolute;
-    bottom:5%; */
-    color: black;
-    background-color: #A2D7D5;
 }
 .container > div.row {
     margin-bottom: 2.5%;
 }
 
-.card-horizontal {
-    display: flex;
-    flex: 1 1 auto;
+#projects-section .row {   
+    margin-bottom: 2%;
+}
+#projects-section .card-title {
+    font-size: 2em;
+} 
+#projects-section .card-text {
+    font-size: 1.5em;
+}
+#cc-logo {
+    border: 1px solid #3D629F;
 }
