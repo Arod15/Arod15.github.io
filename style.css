@@ -63,6 +63,7 @@ div.card-body {
     margin-bottom: 2%;
 }
 #projects-section .card-title {
+    text-decoration: underline #52A3EA;
     font-size: 1.75em;
 } 
 #projects-section small {
