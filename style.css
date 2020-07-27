@@ -1,8 +1,12 @@
 /* general classes */
 body {
-    background-color: #F1F2F6;
-    color: #3D4859;
-    /* background-color: #8BA4CC; */
+    /* lite-theme */
+    /* background-color: #F1F2F6;  */
+    /* color: #3D4859; */
+
+    /* blue (dark) theme */
+    background-color: #042C4F;
+    color: white;
 }
 img {
     height: auto;
@@ -19,10 +23,13 @@ img {
 }
 /* actual classes */
 .banner-section {
-    background-color: #3D629F;
     margin-bottom: 1%;
-    /* background-color: rgb(10, 25, 47); */
-    /* background-color: #546C91; */
+    /* lite-theme */
+    /* background-color: #3D629F; */
+
+    /* blue (dark) theme */
+    background-color: rgb(10, 25, 47);
+    /* background-color: #004B75; */
 }
 .vert-centering-ctn {
     margin-top: 3%;
@@ -40,13 +47,6 @@ img {
 }
 #about-card {
     height: 100%;
-    /* color: white; */
-    /* background-color: white; */
-}
-div.card {
-    /* height: 21em; */
-    background-color: white;
-    /* width: 20rem; */
 }
 div.card-body {
     padding-top: 0;
@@ -56,12 +56,18 @@ div.card-body {
     margin-bottom: 2.5%;
 }
 
+#PROJECTS {
+    color: #52A3EA;
+}
 #projects-section .row {   
     margin-bottom: 2%;
 }
 #projects-section .card-title {
     font-size: 1.75em;
 } 
+#projects-section small {
+    color: #93c8d0;
+}
 #projects-section .card-text {
     font-size: 1.25em;
 }
