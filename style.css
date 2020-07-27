@@ -74,17 +74,24 @@ div.card-body {
 
 /* mobile-specific class changes */
 @media (max-width: 480px) {
+    #nav-items {
+        flex-direction: row;
+        display: none;
+        /* float: right; */
+    }
+    .vert-centering-ctn {
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    .vert-centering-ctn .col-6 {
+        margin-top: 10%;
+    }
     #projects-section .col-5 {
         margin: 7% auto;
     }
     #projects-section .col-11 {
         margin-bottom: 25%;
     }
-    .vert-centering-ctn {
-        text-align: center;
-    }
-    .vert-centering-ctn .col-6 {
-        margin-top: 5%;
-    }
+    
 
 }
