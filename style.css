@@ -12,6 +12,10 @@ img {
     height: auto;
     width: 100%;
 }
+a {
+    text-decoration: none;
+}
+
 .circle {
     background-color: white;
     border-radius: 100%;
@@ -37,7 +41,7 @@ img {
     justify-content: center;
     align-items: center;
 }
-.about-me-row {
+.aligned-img-txt-row {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,6 +52,15 @@ img {
 #about-card {
     height: 100%;
 }
+#about-card .name {
+    color: #93c8d0;
+    font-size: 2.5em; 
+    margin-bottom: 0; 
+}
+#about-card .banner-sentence {
+    font-style: italic; 
+    font-size: 1.5em;
+}
 div.card-body {
     padding-top: 0;
     position: relative;
@@ -56,14 +69,21 @@ div.card-body {
     margin-bottom: 2.5%;
 }
 
-#PROJECTS {
+#PROJECTS, #ABOUT-ME {
     color: #52A3EA;
+}
+#about-me-section .card-title {
+    font-size: 1.75em;
+}
+#about-me-section .card-text {
+    font-size: 1.25em;
 }
 #projects-section .row {   
     margin-bottom: 2%;
 }
 #projects-section .card-title {
     text-decoration: underline #52A3EA;
+    color: white;
     font-size: 1.75em;
 } 
 #projects-section small {
@@ -92,6 +112,9 @@ div.card-body {
     }
     .vert-centering-ctn .col-6 {
         margin-top: 10%;
+    }
+    #about-me-section .col-5 {
+        margin: 7% auto;
     }
     #projects-section .col-5 {
         margin: 7% auto;
