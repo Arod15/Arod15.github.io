@@ -1,4 +1,7 @@
 /* general classes */
+html {
+    scroll-behavior: smooth;
+}
 body {
     /* lite-theme */
     /* background-color: #F1F2F6;  */
