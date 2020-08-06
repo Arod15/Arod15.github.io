@@ -1,14 +1,16 @@
-/* general classes */
+/* html tag classes */
 html {
     scroll-behavior: smooth;
 }
 body {
     /* lite-theme */
-    /* background-color: #F1F2F6;  */
+    /* background-color: #f1f2f600;  */
     /* color: #3D4859; */
 
     /* blue (dark) theme */
     background-color: #042C4F;
+    /* background-color: #045399; */
+    /* background-color: #00296B; */
     color: white;
 }
 img {
@@ -19,8 +21,15 @@ a {
     text-decoration: none;
 }
 
+/* standard method of debugging */
+/* div {
+    border: 1px solid red;
+} */
+
+/* general classes */
 .circle {
     background-color: white;
+    /* background-color: black; */
     border-radius: 100%;
 }
 .img-container > img {
@@ -28,15 +37,16 @@ a {
     max-width: auto;
     margin: 0 auto;
 }
+
 /* actual classes */
 .banner-section {
     margin-bottom: 1%;
     /* lite-theme */
-    /* background-color: #3D629F; */
+    /* background-color: #045399; */
 
     /* blue (dark) theme */
     background-color: rgb(10, 25, 47);
-    /* background-color: #004B75; */
+    /* background-color: #045399; */
 }
 .vert-centering-ctn {
     margin-top: 3%;
@@ -56,13 +66,17 @@ a {
     height: 100%;
 }
 #about-card .name {
-    color: #93c8d0;
+    /* ice blue */
+    /* color: #93c8d0; */
+    /* bright orange */
+    color: #f57513;
+    font-weight: bold;
     font-size: 2.5em; 
     margin-bottom: 0; 
 }
 #about-card .banner-sentence {
     font-style: italic; 
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 div.card-body {
     padding-top: 0;
@@ -73,27 +87,39 @@ div.card-body {
 }
 
 #PROJECTS, #ABOUT-ME {
-    color: #52A3EA;
+    /* light blue */
+    /* color: #A2D7D5; */
+    /* darker-orange #CC6310 */
+    /* bright orange */
+    color: #f57513;
+}
+#link-section img {
+    /* height: auto; */
+    width: 50px;
+}
+#about-me-section, #project-section {
+    margin-top: 7.5vh;
 }
 #about-me-section .card-title {
-    font-size: 1.75em;
+    font-size: 1.75rem;
 }
 #about-me-section .card-text {
-    font-size: 1.25em;
+    font-size: 1.25rem;
 }
-#projects-section .row {   
+#project-section .row {   
     margin-bottom: 2%;
 }
-#projects-section .card-title {
-    text-decoration: underline #52A3EA;
+#project-section .card-title {
+    text-decoration: underline #CC6310;
     color: white;
-    font-size: 1.75em;
+    font-size: 1.75rem;
 } 
-#projects-section small {
+#project-section small {
     color: #93c8d0;
+    /* color: #CC6310; */
 }
-#projects-section .card-text {
-    font-size: 1.25em;
+#project-section .card-text {
+    font-size: 1.25rem;
 }
 #cc-logo {
     border: 1px solid #3D629F;
@@ -119,10 +145,10 @@ div.card-body {
     #about-me-section .col-5 {
         margin: 7% auto;
     }
-    #projects-section .col-5 {
+    #project-section .col-5 {
         margin: 7% auto;
     }
-    #projects-section .col-11 {
+    #project-section .col-11 {
         margin-bottom: 25%;
     }
     
